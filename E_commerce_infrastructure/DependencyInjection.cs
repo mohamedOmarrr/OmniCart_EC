@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using E_commerce_application.Interfaces;
+using E_commerce_infrastructure.Cloudinary;
 using E_commerce_infrastructure.Email;
 using E_commerce_infrastructure.Identities;
 using E_commerce_infrastructure.Redis;
@@ -48,7 +49,11 @@ public static class DependencyInjection
             // .AddDefaultTokenProviders();
 
 
-        
+//cloudinary register
+
+        services.Configure<CloudinarySettings>(
+            config.GetSection(CloudinarySettings.SectionName)
+        );
         
         
         
