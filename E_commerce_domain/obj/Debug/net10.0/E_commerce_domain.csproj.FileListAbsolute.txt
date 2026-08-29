@@ -1,0 +1,12 @@
+E:\E_commerce_api\omni_E_commerce\E_commerce_domain\bin\Debug\net10.0\E_commerce_domain.deps.json
+E:\E_commerce_api\omni_E_commerce\E_commerce_domain\bin\Debug\net10.0\E_commerce_domain.dll
+E:\E_commerce_api\omni_E_commerce\E_commerce_domain\bin\Debug\net10.0\E_commerce_domain.pdb
+E:\E_commerce_api\omni_E_commerce\E_commerce_domain\obj\Debug\net10.0\E_commerce_domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\E_commerce_api\omni_E_commerce\E_commerce_domain\obj\Debug\net10.0\E_commerce_domain.AssemblyInfoInputs.cache
+E:\E_commerce_api\omni_E_commerce\E_commerce_domain\obj\Debug\net10.0\E_commerce_domain.AssemblyInfo.cs
+E:\E_commerce_api\omni_E_commerce\E_commerce_domain\obj\Debug\net10.0\E_commerce_domain.csproj.CoreCompileInputs.cache
+E:\E_commerce_api\omni_E_commerce\E_commerce_domain\obj\Debug\net10.0\E_commerce_domain.sourcelink.json
+E:\E_commerce_api\omni_E_commerce\E_commerce_domain\obj\Debug\net10.0\E_commerce_domain.dll
+E:\E_commerce_api\omni_E_commerce\E_commerce_domain\obj\Debug\net10.0\refint\E_commerce_domain.dll
+E:\E_commerce_api\omni_E_commerce\E_commerce_domain\obj\Debug\net10.0\E_commerce_domain.pdb
+E:\E_commerce_api\omni_E_commerce\E_commerce_domain\obj\Debug\net10.0\ref\E_commerce_domain.dll

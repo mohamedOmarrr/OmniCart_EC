@@ -1,0 +1,16 @@
+E:\E_commerce_api\omni_E_commerce\E_commerce_application\bin\Debug\net10.0\E_commerce_application.deps.json
+E:\E_commerce_api\omni_E_commerce\E_commerce_application\bin\Debug\net10.0\E_commerce_application.dll
+E:\E_commerce_api\omni_E_commerce\E_commerce_application\bin\Debug\net10.0\E_commerce_application.pdb
+E:\E_commerce_api\omni_E_commerce\E_commerce_application\bin\Debug\net10.0\E_commerce_domain.dll
+E:\E_commerce_api\omni_E_commerce\E_commerce_application\bin\Debug\net10.0\E_commerce_domain.pdb
+E:\E_commerce_api\omni_E_commerce\E_commerce_application\obj\Debug\net10.0\E_commerce_application.csproj.AssemblyReference.cache
+E:\E_commerce_api\omni_E_commerce\E_commerce_application\obj\Debug\net10.0\E_commerce_application.GeneratedMSBuildEditorConfig.editorconfig
+E:\E_commerce_api\omni_E_commerce\E_commerce_application\obj\Debug\net10.0\E_commerce_application.AssemblyInfoInputs.cache
+E:\E_commerce_api\omni_E_commerce\E_commerce_application\obj\Debug\net10.0\E_commerce_application.AssemblyInfo.cs
+E:\E_commerce_api\omni_E_commerce\E_commerce_application\obj\Debug\net10.0\E_commerce_application.csproj.CoreCompileInputs.cache
+E:\E_commerce_api\omni_E_commerce\E_commerce_application\obj\Debug\net10.0\E_commerce_application.sourcelink.json
+E:\E_commerce_api\omni_E_commerce\E_commerce_application\obj\Debug\net10.0\E_commer.776A828E.Up2Date
+E:\E_commerce_api\omni_E_commerce\E_commerce_application\obj\Debug\net10.0\E_commerce_application.dll
+E:\E_commerce_api\omni_E_commerce\E_commerce_application\obj\Debug\net10.0\refint\E_commerce_application.dll
+E:\E_commerce_api\omni_E_commerce\E_commerce_application\obj\Debug\net10.0\E_commerce_application.pdb
+E:\E_commerce_api\omni_E_commerce\E_commerce_application\obj\Debug\net10.0\ref\E_commerce_application.dll

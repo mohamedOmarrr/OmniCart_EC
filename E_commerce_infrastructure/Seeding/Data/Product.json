@@ -1,0 +1,1098 @@
+﻿
+[
+{
+"Id": "a90962eb-afd2-52bb-bc24-c869ed88e560",
+"Name": "Long Sleeve Tee",
+"Description": "A clean navy long-sleeve T-shirt made from soft cotton jersey with a comfortable regular fit for everyday wear.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301002/ea80899f540ae79417aecdf1f64d9877_edit_28965448633845.jpg",
+"Price": 899.99,
+"ProductBrandId": "11111111-1111-1111-1111-111111111111",
+"ProductCategoryId": "65150cad-2d60-52d4-a5a9-bd43ff630795"
+},
+{
+"Id": "4bb6733e-4f68-5d00-a74d-1c1ca6098d05",
+"Name": "Black Jeans",
+"Description": "Regular-fit black denim jeans with a versatile five-pocket design, durable cotton-blend fabric, and a comfortable everyday cut.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301000/e4100debf1fe6af8ea66b8dacb1026ae_edit_28852316492690.jpg",
+"Price": 1299.99,
+"ProductBrandId": "11111111-1111-1111-1111-111111111111",
+"ProductCategoryId": "65150cad-2d60-52d4-a5a9-bd43ff630795"
+},
+{
+"Id": "6f70cd59-c9cc-5784-9406-302ae01293ba",
+"Name": "Linen Shirt",
+"Description": "A beige linen-blend shirt with a lightweight breathable weave and relaxed silhouette, ideal for warm-weather outfits.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301000/c906d2deb1ea2f7fa1c9b341f64f6e7c_edit_29057273254748.jpg",
+"Price": 1099.99,
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "65150cad-2d60-52d4-a5a9-bd43ff630795"
+},
+{
+"Id": "92bb2982-c510-5191-ba48-a9ad6eca8828",
+"Name": "Striped Polo",
+"Description": "A white-and-black striped short-sleeve polo shirt crafted from breathable pique fabric with a neat everyday fit.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301000/b76329397cf63b65bd8e369fa9703f21_edit_29107188538374.jpg",
+"Price": 949.99,
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "65150cad-2d60-52d4-a5a9-bd43ff630795"
+},
+{
+"Id": "2376c86d-156c-5b9a-aec8-f197fbe40ce2",
+"Name": "Sport Tee",
+"Description": "A black and grey athletic T-shirt made from lightweight stretch jersey, designed for comfortable training and active days.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786300999/b99ad67f64a22ee1481adb9831cc349d_edit_29137919083727.jpg",
+"Price": 999.99,
+"ProductBrandId": "f91a3dd3-cd53-5d64-9ac0-005b1c5c1973",
+"ProductCategoryId": "65150cad-2d60-52d4-a5a9-bd43ff630795"
+},
+{
+"Id": "c97d73fb-ade7-5eeb-becb-31024183e104",
+"Name": "Striped Shirt",
+"Description": "A baby-blue and white striped long-sleeve shirt made from smooth cotton fabric with a smart casual silhouette.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786300997/62146938c489f5e867199ad81ade8243_edit_29014944738930.jpg",
+"Price": 1149.99,
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "65150cad-2d60-52d4-a5a9-bd43ff630795"
+},
+{
+"Id": "d891a221-d56c-5e98-8ae5-a0d8ed7c7d09",
+"Name": "Adidas Training Tee",
+"Description": "A white and navy short-sleeve training T-shirt made from breathable performance fabric with a lightweight athletic feel.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786300997/4701169daea4ab5f4e79af87485d0881.jpg",
+"Price": 1399.99,
+"ProductBrandId": "b30017d3-9883-57b3-940c-0151a5f84715",
+"ProductCategoryId": "65150cad-2d60-52d4-a5a9-bd43ff630795"
+},
+{
+"Id": "54971409-e498-56ff-8ca6-e16e79eb47ca",
+"Name": "Casual Shirt",
+"Description": "An off-white short-sleeve shirt featuring subtle stripes and a soft cotton-blend construction for relaxed summer styling.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786300997/56607efb111c24f04f1d0256c54350f2_edit_30082215498159.jpg",
+  
+"Price": 999.99,
+"ProductBrandId": "11111111-1111-1111-1111-111111111111",
+"ProductCategoryId": "65150cad-2d60-52d4-a5a9-bd43ff630795"
+},
+{
+"Id": "94af7edc-a582-55e5-9f4b-7fa5acbfb369",
+"Name": "Grey Milton Pants",
+"Description": "Light-grey Milton fabric trousers with a soft brushed finish, straight silhouette, and comfortable everyday construction.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786300996/9179d6f96d96b3f09bd756d33a74836e_edit_28766570580796.jpg",
+"Price": 1199.99,
+"ProductBrandId": "44444444-4444-4444-4444-444444444444",
+"ProductCategoryId": "65150cad-2d60-52d4-a5a9-bd43ff630795"
+},
+{
+"Id": "f6dc26e7-c26f-5b71-83c2-c97b4e918ffe",
+"Name": "Regular Blue Jeans",
+"Description": "Classic blue regular-fit jeans made from durable stretch denim, offering a timeless five-pocket design and everyday comfort.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786300994/6318baec84f908bea247678a38bf096a_edit_28713263988421.jpg",
+"Price": 1299.99,
+"ProductBrandId": "11111111-1111-1111-1111-111111111111",
+"ProductCategoryId": "65150cad-2d60-52d4-a5a9-bd43ff630795"
+},
+{
+"Id": "f99cd0ac-e707-5fa8-9c2c-b803757cfbcb",
+"Name": "Plaid Shirt",
+"Description": "A white-and-black plaid long-sleeve shirt made from soft woven cotton, suitable for casual layering and everyday outfits.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786300994/81b64bdb41c75c4aa34024b81448b4d6_edit_29079456565781.jpg",
+"Price": 1099.99,
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "65150cad-2d60-52d4-a5a9-bd43ff630795"
+},
+{
+"Id": "cc487ec1-4484-50d2-aadc-b29d71993011",
+"Name": "Polo Stripe Shirt",
+"Description": "A baby-blue striped long-sleeve polo-style shirt made from smooth cotton fabric with a polished casual look.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786300993/2c5176f928a825ecdc4ad323a05a957d_edit_28933287541357.jpg",
+"Price": 1199.99,
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "65150cad-2d60-52d4-a5a9-bd43ff630795"
+},
+{
+"Id": "7318417b-acf2-5df8-9e5b-acbf6da9cf0d",
+"Name": "Wide Leg Pants",
+"Description": "Beige wide-leg trousers made from soft structured fabric, offering a relaxed silhouette and comfortable everyday wear.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786300993/68fb745374e5aba2ef71c0a51de18cf2_edit_28741222455389.jpg",
+"Price": 1249.99,
+"ProductBrandId": "11111111-1111-1111-1111-111111111111",
+"ProductCategoryId": "65150cad-2d60-52d4-a5a9-bd43ff630795"
+},
+{
+"Id": "f0fc083a-a67f-59a6-9035-a612b393798f",
+"Name": "Sport Milton Pants",
+"Description": "Black athletic trousers in soft Milton fabric with a relaxed sporty cut, designed for comfort during casual and active wear.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786300993/1da6056bec23011ce95b6d32ca953eee_edit_28817799897756.jpg",
+"Price": 1199.99,
+"ProductBrandId": "f91a3dd3-cd53-5d64-9ac0-005b1c5c1973",
+"ProductCategoryId": "65150cad-2d60-52d4-a5a9-bd43ff630795"
+},
+{
+"Id": "360a8811-81dc-5bb0-9617-a9bea890a201",
+"Name": "Basic White Tee",
+"Description": "A minimal white basic T-shirt made from soft breathable cotton jersey with a clean regular fit for everyday layering.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786300993/f85ea7988aaa0477ecc087c055035e58_edit_28903888852254.jpg",
+"Price": 699.99,
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "65150cad-2d60-52d4-a5a9-bd43ff630795"
+},
+{
+"Id": "97ea4ae2-0f02-5011-8916-f96982853581",
+  
+"Name": "Denim Jacket",
+"Description": "A dark-blue cropped denim jacket made from structured cotton denim with a modern silhouette and versatile casual styling.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301125/0ed40e7b6f3bdd967eb8c28f006cfdaf_edit_30014083092820.jpg",
+"Price": 1599.99,
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "eb60b919-db6c-5fa9-9c11-5d9d760a3cf9"
+},
+{
+"Id": "6f7312b9-fcac-5602-be69-7b7b6f0e7465",
+"Name": "Pink Maxi Dress",
+"Description": "A long sleeveless pink maxi dress made from flowing chiffon fabric, featuring an elegant drape and lightweight feel.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301124/magnific_ecommerce-studio-shot-of-_vQuHi6ba47_edit_28417567286190.png",
+"Price": 1899.99,
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "eb60b919-db6c-5fa9-9c11-5d9d760a3cf9"
+},
+{
+"Id": "dc2c4e4c-1075-5a01-a84f-3d0e3d0821a7",
+"Name": "Mint Maxi Dress",
+"Description": "A long sleeveless mint-green dress in smooth crepe fabric, designed with a clean closed neckline and elegant full-length silhouette.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301123/magnific_a-womens-elegant-dress-is_3zGYbmGREY.png",
+"Price": 1999.99,
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "eb60b919-db6c-5fa9-9c11-5d9d760a3cf9"
+},
+{
+"Id": "28645745-8110-54c1-a6e6-fb7a321db1c5",
+"Name": "Fuchsia Maxi Dress",
+"Description": "A vibrant fuchsia long dress crafted from lightweight crepe fabric with a sleeveless closed-neck design and graceful flowing fit.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301122/magnific_a-womens-dress-isolated-o_vQuHRhRa47.png",
+"Price": 1949.99,
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "eb60b919-db6c-5fa9-9c11-5d9d760a3cf9"
+},
+{
+"Id": "af6f6246-4418-5425-b28a-31abf3f961a0",
+"Name": "Knitted Wool Socks",
+"Description": "Soft white knitted wool-blend socks designed to provide warmth, comfort, and a cozy feel during cooler days.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301121/dfabd4e16acebc245423289ead1f830b.jpg",
+"Price": 299.99,
+"ProductBrandId": "11111111-1111-1111-1111-111111111111",
+"ProductCategoryId": "eb60b919-db6c-5fa9-9c11-5d9d760a3cf9"
+},
+{
+"Id": "b6001fa6-62bf-586b-bd92-73df1e85a524",
+"Name": "Soft Pink Shirt",
+"Description": "A soft pink long-sleeve shirt made from smooth satin-touch fabric with a comfortable drape and refined feminine look.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301120/d3dbaeb17fcee123f3c128fd9e0c1223_edit_29240433439053.jpg",
+"Price": 1099.99,
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "eb60b919-db6c-5fa9-9c11-5d9d760a3cf9"
+},
+{
+"Id": "7129b965-df3f-5197-85cc-e2ef073487a9",
+"Name": "Wide Leg Sweatpants",
+"Description": "Light-grey wide-leg sweatpants made from soft fleece-backed cotton, offering a relaxed sporty silhouette and everyday comfort.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301119/c3748fa2d33912939851f942abb70666_edit_28538553629321.jpg",
+"Price": 999.99,
+"ProductBrandId": "f91a3dd3-cd53-5d64-9ac0-005b1c5c1973",
+"ProductCategoryId": "eb60b919-db6c-5fa9-9c11-5d9d760a3cf9"
+},
+{
+"Id": "8ecfee24-9707-5915-bc5d-963669771005",
+"Name": "Wide Flare Jeans",
+"Description": "Dark-blue flare jeans with a fitted upper and wider leg opening, crafted from stretch denim for a comfortable modern fit.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301118/ba089c9e8cb641a7be97e40789a7bb02_edit_28686254409264.jpg",
+  
+"Price": 1399.99,
+"ProductBrandId": "11111111-1111-1111-1111-111111111111",
+"ProductCategoryId": "eb60b919-db6c-5fa9-9c11-5d9d760a3cf9"
+},
+{
+"Id": "afb6052a-ed2f-5b0e-9aac-fe7d8ea91b37",
+"Name": "Soft White Pants",
+"Description": "Soft white trousers made from a smooth lightweight fabric with a clean relaxed fit, suitable for smart-casual outfits.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301117/b12cbf34-9709-4c44-b7cf-792a1951d415_edit_28512588131257.jpg",
+"Price": 1199.99,
+"ProductBrandId": "11111111-1111-1111-1111-111111111111",
+"ProductCategoryId": "eb60b919-db6c-5fa9-9c11-5d9d760a3cf9"
+},
+{
+"Id": "2fcc7f82-6aa3-5a7f-8618-0ed8bee054cf",
+"Name": "Oversized Sport Tee",
+"Description": "An oversized black short-sleeve athletic T-shirt made from breathable performance jersey for training and relaxed streetwear.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301117/835f5495c82f127c2cc24aa0dc943d5c_edit_29332361212611.jpg",
+"Price": 999.99,
+"ProductBrandId": "b30017d3-9883-57b3-940c-0151a5f84715",
+"ProductCategoryId": "eb60b919-db6c-5fa9-9c11-5d9d760a3cf9"
+},
+{
+"Id": "b893f1bc-ab41-52d0-9c4d-d48b103a57cc",
+"Name": "Ice Blue Jeans",
+"Description": "Light ice-blue jeans made from stretch denim with a comfortable everyday cut and a clean modern finish.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301115/18ad02972d972bb6d020655af5839944_edit_28587202724042.jpg",
+"Price": 1299.99,
+"ProductBrandId": "11111111-1111-1111-1111-111111111111",
+"ProductCategoryId": "eb60b919-db6c-5fa9-9c11-5d9d760a3cf9"
+},
+{
+"Id": "9aacf036-6fa2-5bed-9ff7-aef0679f4d37",
+"Name": "Fitted Sport Tee",
+"Description": "A white short-sleeve fitted sports T-shirt made from lightweight stretch fabric for comfortable training and active routines.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301114/5d95d967af0248ceda79842b22580bf6_edit_29355706451717.jpg",
+"Price": 899.99,
+"ProductBrandId": "33333333-3333-3333-3333-333333333333",
+"ProductCategoryId": "eb60b919-db6c-5fa9-9c11-5d9d760a3cf9"
+},
+{
+"Id": "d249da4c-98c4-5913-9c8a-53bea93eebe3",
+"Name": "Plaid Lounge Pants",
+"Description": "Soft white and burgundy plaid lounge pants made from comfortable cotton-blend fabric, ideal for relaxed home wear.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301114/5b6bb78a616e1c61fdd3e3ecaff8804d_edit_28565955729883.jpg",
+"Price": 799.99,
+"ProductBrandId": "11111111-1111-1111-1111-111111111111",
+"ProductCategoryId": "eb60b919-db6c-5fa9-9c11-5d9d760a3cf9"
+},
+{
+"Id": "e7de1fc9-dcef-58a8-93a3-33c76dec810d",
+"Name": "Soft White Shirt",
+"Description": "A clean white long-sleeve shirt made from an exceptionally soft cotton-modal blend with a smooth drape and comfortable fit.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301113/1ca8264d8a1c15c705e05b144df8267c_edit_29191805817457.jpg",
+"Price": 1099.99,
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "eb60b919-db6c-5fa9-9c11-5d9d760a3cf9"
+},
+{
+"Id": "b4ab7a24-ba31-5fab-9889-c45d14515bbe",
+"Name": "Pixel Phone",
+"Description": "A modern Google Pixel smartphone with a smooth high-refresh OLED display, advanced computational photography, 12GB RAM, and fast 5G connectivity.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301232/e763f49ed741bd00e406901677ae0565_edit_30792290370180.jpg",
+"Price": 34999.99,
+"ProductBrandId": "138b168f-9137-5218-95d3-0aa592c48158",
+"ProductCategoryId": "aa02cf46-cd11-57dd-96d9-2b33740b6d26"
+},
+{
+"Id": "9e06b794-ceb7-5c3d-a930-058ebe813156",
+  
+"Name": "iPhone 17 Pro",
+"Description": "A premium Apple smartphone featuring a high-refresh OLED display, 12GB RAM, a powerful next-generation Pro processor, and an advanced triple-camera system.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301230/7a5e99efab91f727648ad4fd777f6bc9_edit_30684029877200.jpg",
+"Price": 64999.99,
+"ProductBrandId": "2ec4ece8-5593-5721-b73f-f9549b6e0426",
+"ProductCategoryId": "aa02cf46-cd11-57dd-96d9-2b33740b6d26"
+},
+{
+"Id": "b5f16e36-dc12-5ce2-afe1-ffbe64543848",
+"Name": "Vivo Smartphone",
+"Description": "A stylish Vivo smartphone with a vivid AMOLED display, 12GB RAM, 256GB storage, fast charging, and a versatile multi-camera setup.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301229/58352392c567c8aec97b1bf9bce8c4c2_edit_30774798011124.jpg",
+"Price": 22999.99,
+"ProductBrandId": "1178c4ee-f03a-5d22-b5e9-5ec908aa4758",
+"ProductCategoryId": "aa02cf46-cd11-57dd-96d9-2b33740b6d26"
+},
+{
+"Id": "6573702b-eb0e-59bc-acdc-8f5ac03342f1",
+"Name": "Galaxy S26 Ultra",
+"Description": "A flagship Samsung smartphone with a large high-resolution AMOLED display, 12GB RAM, 512GB storage, a high-performance processor, and an advanced camera system.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301228/9116dbc4ff54139192b5658911583d3f.jpg",
+"Price": 69999.99,
+"ProductBrandId": "d97e9ae0-a1fd-5e07-a088-974eca1bb394",
+"ProductCategoryId": "aa02cf46-cd11-57dd-96d9-2b33740b6d26"
+},
+{
+"Id": "9da1cc44-1a4f-51d2-8b14-6bef806e6473",
+"Name": "iPhone 16",
+"Description": "Apple iPhone with a bright OLED display, 8GB RAM, 128GB storage, a powerful A-series processor, and a dual-camera system for everyday photography.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301226/7b187fcd36658dbd9df1fc707e1773de_edit_30700732598756.jpg",
+"Price": 47999.99,
+"ProductBrandId": "2ec4ece8-5593-5721-b73f-f9549b6e0426",
+"ProductCategoryId": "aa02cf46-cd11-57dd-96d9-2b33740b6d26"
+},
+{
+"Id": "41d95167-1ac5-5432-a0f0-bc8ec56b85ec",
+"Name": "Redmi Smartphone",
+"Description": "A blue Redmi smartphone with a high-refresh AMOLED display, 8GB RAM, 256GB storage, long battery life, and fast charging support.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301226/290fc307425d8cae81ba6aa8320a7172_edit_30837361144902.jpg",
+"Price": 16999.99,
+"ProductBrandId": "e877ff45-22dd-5984-9af2-3476ff22407a",
+"ProductCategoryId": "aa02cf46-cd11-57dd-96d9-2b33740b6d26"
+},
+{
+"Id": "b78ca7a0-8432-5bbb-a8b3-8eee950a4cad",
+"Name": "Galaxy S25",
+"Description": "A premium Samsung smartphone with a vivid AMOLED display, 12GB RAM, 256GB storage, a high-performance processor, and a versatile camera system.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301225/5ec3150e6cf46192395ed1d04071d185_edit_30646398001277.jpg",
+"Price": 42999.99,
+"ProductBrandId": "d97e9ae0-a1fd-5e07-a088-974eca1bb394",
+"ProductCategoryId": "aa02cf46-cd11-57dd-96d9-2b33740b6d26"
+},
+{
+"Id": "18f52af6-6f47-5669-ad1c-6c9aec01511d",
+"Name": "Oppo Smartphone",
+"Description": "A sleek white Oppo smartphone with an AMOLED display, 8GB RAM, 256GB storage, fast charging, and a versatile camera setup.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301223/a8d7c4ac9ac8143e79f18138b9fce106.jpg",
+"Price": 19999.99,
+"ProductBrandId": "a985c68e-f591-5b80-800e-462d733feb48",
+"ProductCategoryId": "aa02cf46-cd11-57dd-96d9-2b33740b6d26"
+},
+{
+"Id": "82e92462-5bf8-564e-8718-9980eb9b6a91",
+"Name": "Nothing Phone",
+"Description": "A distinctive Nothing smartphone with a clean OLED display, 12GB RAM, 256GB storage, fast charging, and a minimalist modern design.",
+  
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301222/dd9cd2346a6b728506bfaf0138d319b7_edit_30859925821872.jpg",
+"Price": 24999.99,
+"ProductBrandId": "d97e9ae0-a1fd-5e07-a088-974eca1bb394",
+"ProductCategoryId": "aa02cf46-cd11-57dd-96d9-2b33740b6d26"
+},
+{
+"Id": "b81711f1-5ff5-5a7a-bdc2-d3fc32f3b49d",
+"Name": "Galaxy S23",
+"Description": "A compact Samsung smartphone with a Dynamic AMOLED display, 8GB RAM, 256GB storage, a fast flagship processor, and a triple-camera system.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301221/604e400e98a5a72a289f93a4e3501a2c_edit_30752071036393.jpg",
+"Price": 26999.99,
+"ProductBrandId": "d97e9ae0-a1fd-5e07-a088-974eca1bb394",
+"ProductCategoryId": "aa02cf46-cd11-57dd-96d9-2b33740b6d26"
+},
+{
+"Id": "99676e73-9904-5fd6-a895-3fe21ba79637",
+"Name": "Honor 8XD",
+"Description": "A stylish Honor smartphone with a large AMOLED display, 8GB RAM, 256GB storage, a long-lasting battery, and fast charging support.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301220/bbfbb69f34207085559915fb1c50df0c_edit_30902925747637.jpg",
+"Price": 17999.99,
+"ProductBrandId": "a985c68e-f591-5b80-800e-462d733feb48",
+"ProductCategoryId": "aa02cf46-cd11-57dd-96d9-2b33740b6d26"
+},
+{
+"Id": "adda0e3e-d963-5f5c-91dd-67c13e7d47ae",
+"Name": "Pixel Pro",
+"Description": "A dark-grey Google Pixel smartphone with a high-refresh OLED display, 12GB RAM, 256GB storage, 5G connectivity, and advanced AI-powered photography features.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301219/b2c6a55f22f9e7e4f4f684987f6b60ba_edit_30809328965746.jpg",
+"Price": 39999.99,
+"ProductBrandId": "138b168f-9137-5218-95d3-0aa592c48158",
+"ProductCategoryId": "aa02cf46-cd11-57dd-96d9-2b33740b6d26"
+},
+{
+"Id": "7c59c934-aaa9-594c-bab8-b9ef5699cf20",
+"Name": "Adidas Football",
+"Description": "A durable Adidas football with machine-stitched panels, a responsive synthetic cover, and a balanced design for recreational and training sessions.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301711/299bc0729e7ac07b38d033fb0bb26a52_edit_31692777671138.jpg",
+"Price": 1499.99,
+"ProductBrandId": "b30017d3-9883-57b3-940c-0151a5f84715",
+"ProductCategoryId": "415ca2b9-7e91-5aaf-b476-22080257ef11"
+},
+{
+"Id": "8503a369-d1c9-5b9b-a93c-9839e2d8b3ca",
+"Name": "Nike Sports Bottle",
+"Description": "A reusable Nike sports water bottle with a secure screw cap, easy-grip shape, and lightweight construction for training and outdoor activities.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301710/4a8baf7fb7ddfe86a8147a5ec0d2fa18_edit_31448065153263.jpg",
+"Price": 699.99,
+"ProductBrandId": "33333333-3333-3333-3333-333333333333",
+"ProductCategoryId": "415ca2b9-7e91-5aaf-b476-22080257ef11"
+},
+{
+"Id": "91a17851-3f0a-57b9-b855-2c735109b28f",
+"Name": "Football Gloves",
+"Description": "White Nike football goalkeeper gloves with padded palms, flexible construction, and a secure wrist closure for training and match play.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301708/f67efea740d76440e61c0249e9308a18_edit_31562389230875.jpg",
+"Price": 1299.99,
+"ProductBrandId": "33333333-3333-3333-3333-333333333333",
+"ProductCategoryId": "415ca2b9-7e91-5aaf-b476-22080257ef11"
+},
+{
+"Id": "acf4e4ed-15c9-5305-8ef1-e8229e88a94a",
+"Name": "Boxing Gloves",
+"Description": "Black boxing gloves with dense impact-absorbing padding, durable synthetic leather, and a supportive hook-and-loop wrist closure.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301706/04ddefb58c092ce54b4ce08ccd021be2_edit_31634232911681.jpg",
+  
+"Price": 1699.99,
+"ProductBrandId": "44444444-4444-4444-4444-444444444444",
+"ProductCategoryId": "415ca2b9-7e91-5aaf-b476-22080257ef11"
+},
+{
+"Id": "2a738c91-2609-5991-8a09-11fbbee162f5",
+"Name": "Black Football Gloves",
+"Description": "Black Nike goalkeeper gloves designed with padded palms, flexible fingers, and a secure wrist strap for dependable grip during training.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301705/2edb82f6cea1ad52cc67ba7ad409cb3f_edit_31654477692090.jpg",
+"Price": 1299.99,
+"ProductBrandId": "33333333-3333-3333-3333-333333333333",
+"ProductCategoryId": "415ca2b9-7e91-5aaf-b476-22080257ef11"
+},
+{
+"Id": "08eb8c35-598c-52d5-a5c3-286d677ada06",
+"Name": "Volleyball",
+"Description": "A bright yellow and blue volleyball with a soft-touch synthetic cover, stable round construction, and durable machine-stitched panels.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301704/63a3c5c878bbeccf0b0810b6dad850fc_edit_31707726056653.jpg",
+"Price": 999.99,
+"ProductBrandId": "44444444-4444-4444-4444-444444444444",
+"ProductCategoryId": "415ca2b9-7e91-5aaf-b476-22080257ef11"
+},
+{
+"Id": "f67b8593-d3ba-500d-803a-a21d7069b27c",
+"Name": "Pink Volleyball",
+"Description": "A white and pink volleyball with a durable synthetic outer cover and comfortable handling for recreational indoor and outdoor play.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301702/d0a8553013eb16b90ab715eb10312051.jpg",
+"Price": 999.99,
+"ProductBrandId": "44444444-4444-4444-4444-444444444444",
+"ProductCategoryId": "415ca2b9-7e91-5aaf-b476-22080257ef11"
+},
+{
+"Id": "9247adb6-89ad-55b2-88cb-720f681989ba",
+"Name": "Red Sports Bottle",
+"Description": "A compact red Nike training bottle with a leak-resistant lid and ergonomic grip, ideal for gym sessions and outdoor workouts.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301701/cf399bd9787ab40c7e67c6e6da65d49b_edit_31467838262213.jpg",
+"Price": 699.99,
+"ProductBrandId": "33333333-3333-3333-3333-333333333333",
+"ProductCategoryId": "415ca2b9-7e91-5aaf-b476-22080257ef11"
+},
+{
+"Id": "044abd01-cb6b-5222-b41a-27d934ffe2e8",
+"Name": "Nike Gym Bag",
+"Description": "A black Nike gym bag made from durable woven fabric with a spacious main compartment and practical carry handles for daily training.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301699/d96b8ef5579e88184165058fa1f59a4b_edit_31579949730504.jpg",
+"Price": 1599.99,
+"ProductBrandId": "33333333-3333-3333-3333-333333333333",
+"ProductCategoryId": "415ca2b9-7e91-5aaf-b476-22080257ef11"
+},
+{
+"Id": "a0a15fcc-cd1a-5f25-8376-8542aa1f8bbf",
+"Name": "Black Sports Bottle",
+"Description": "A black Nike sports bottle with a lightweight reusable body, secure cap, and easy-carry design for everyday workouts.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301698/afc40cb9eda0db5521710ae15ab1fd96_edit_31544990575517.jpg",
+"Price": 699.99,
+"ProductBrandId": "33333333-3333-3333-3333-333333333333",
+"ProductCategoryId": "415ca2b9-7e91-5aaf-b476-22080257ef11"
+},
+{
+"Id": "83ee5bd7-9281-5a54-b9f1-a52087266528",
+"Name": "Boxing Shorts",
+"Description": "White boxing training shorts made from lightweight quick-dry polyester with a relaxed cut for unrestricted movement.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301696/ca0c8f89268e8fcbccaf04415cf683fa_edit_31673844072760.jpg",
+"Price": 899.99,
+"ProductBrandId": "b30017d3-9883-57b3-940c-0151a5f84715",
+"ProductCategoryId": "415ca2b9-7e91-5aaf-b476-22080257ef11"
+},
+{
+"Id": "63eb88cd-111a-5c41-93b4-c2bac6d22a14",
+  
+"Name": "Basketball",
+"Description": "A durable orange basketball with a textured rubber composite cover, deep channels, and reliable grip for training and recreational play.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301695/ac52ff038a1375463bc139df779b2bf2_edit_31519777622610.jpg",
+"Price": 1099.99,
+"ProductBrandId": "33333333-3333-3333-3333-333333333333",
+"ProductCategoryId": "415ca2b9-7e91-5aaf-b476-22080257ef11"
+},
+{
+"Id": "6ebf6887-39de-513b-8cf3-d9ae781cac86",
+"Name": "Adidas Water Bottle",
+"Description": "A white Adidas sports bottle with a secure lid, lightweight construction, and ergonomic shape for gym sessions and outdoor activities.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301693/54219bc9bd9d830124e5d1dc5506c54f_edit_31424742216240.jpg",
+"Price": 699.99,
+"ProductBrandId": "b30017d3-9883-57b3-940c-0151a5f84715",
+"ProductCategoryId": "415ca2b9-7e91-5aaf-b476-22080257ef11"
+},
+{
+"Id": "f5eb323d-c4b4-5271-bb23-aa652749e8de",
+"Name": "Adidas Football Pink",
+"Description": "A pink and white Adidas football featuring a durable synthetic cover, balanced construction, and responsive feel for training and recreational matches.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301691/646e676947c6fe9f5a73859e3b80075f.jpg",
+"Price": 1499.99,
+"ProductBrandId": "b30017d3-9883-57b3-940c-0151a5f84715",
+"ProductCategoryId": "415ca2b9-7e91-5aaf-b476-22080257ef11"
+},
+{
+"Id": "df3f44f3-16db-5d4d-9d97-e09b95714343",
+"Name": "World Cup Football",
+"Description": "A premium Adidas match-style football with a textured synthetic cover, stable flight characteristics, and a design inspired by international competition balls.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301690/2ff1b1bbf26011306d18c6ef170242f2_edit_31495820339234.jpg",
+"Price": 2199.99,
+"ProductBrandId": "b30017d3-9883-57b3-940c-0151a5f84715",
+"ProductCategoryId": "415ca2b9-7e91-5aaf-b476-22080257ef11"
+},
+{
+"Id": "df3f44f3-16db-5d4d-9d97-e09b95714343",
+"Name": "Smart TV",
+"Description": "A black 55-inch 4K smart TV with HDR support, built-in streaming apps, slim bezels, and immersive stereo sound for home entertainment.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301690/2ff1b1bbf26011306d18c6ef170242f2_edit_31495820339234.jpg",
+"Price": 24999.99,
+"ProductBrandId": "d97e9ae0-a1fd-5e07-a088-974eca1bb394",
+"ProductCategoryId": "fbe3c0f7-0771-5bf7-8f39-0233bfbc61fc"
+},
+{
+"Id": "b2d75b45-4bae-5ab8-ae1c-d1f7bde73b43",
+"Name": "Nikon Camera",
+"Description": "A compact Nikon digital camera with a high-resolution sensor, optical image stabilization, Full HD video recording, and a versatile zoom lens.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301421/pexels-christopher-welsch-leveroni-2150186467-32129264_edit_28469961772263.jpg",
+"Price": 29999.99,
+"ProductBrandId": "11de24e7-5800-5b70-898e-8bcb4ec125b9",
+"ProductCategoryId": "fbe3c0f7-0771-5bf7-8f39-0233bfbc61fc"
+},
+{
+"Id": "b171e1e2-e1e1-5e82-a933-900edb8b3109",
+"Name": "HP Laptop",
+"Description": "A silver HP laptop with a 15.6-inch Full HD display, Intel Core i7-class processor, 16GB RAM, 512GB SSD, and dedicated graphics for everyday productivity.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301420/9de1f2591223a29c2366cf87ff8035dc_edit_31002983371714.jpg",
+"Price": 39999.99,
+"ProductBrandId": "a784f67e-9aac-5686-8315-85e4bffd634b",
+"ProductCategoryId": "fbe3c0f7-0771-5bf7-8f39-0233bfbc61fc"
+},
+{
+"Id": "cc488204-9d12-54b0-9599-be59c3f2d198",
+"Name": "Sony Pink Camera",
+  
+"Description": "A compact pink Sony camera with a high-resolution sensor, fast autofocus, Full HD video, optical stabilization, and a lightweight travel-friendly body.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301418/d6071378dd6e832fa8d53b4e87ed0040.jpg",
+"Price": 27999.99,
+"ProductBrandId": "e0085f0e-5d8b-59b2-bb72-6ba9dc7f4e26",
+"ProductCategoryId": "fbe3c0f7-0771-5bf7-8f39-0233bfbc61fc"
+},
+{
+"Id": "10e66f76-c65e-5de6-86e0-31b9c8b4a357",
+"Name": "Wireless Headphones",
+"Description": "Black over-ear wireless headphones with active noise cancellation, cushioned ear cups, Bluetooth connectivity, and a long-lasting battery.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301417/8d167233aed6bf0432a17561ed469296_edit_30396639300487.jpg",
+"Price": 2499.99,
+"ProductBrandId": "e0085f0e-5d8b-59b2-bb72-6ba9dc7f4e26",
+"ProductCategoryId": "fbe3c0f7-0771-5bf7-8f39-0233bfbc61fc"
+},
+{
+"Id": "773ef3c0-23c4-570b-b0cb-7ea336e57d39",
+"Name": "Wireless Mouse",
+"Description": "A compact black wireless mouse with a precise optical sensor, ergonomic shape, quiet clicks, and reliable 2.4GHz connectivity.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301416/d0155e1ad361723857b4b73a3c8fea64_edit_31048973247842.jpg",
+"Price": 799.99,
+"ProductBrandId": "a784f67e-9aac-5686-8315-85e4bffd634b",
+"ProductCategoryId": "fbe3c0f7-0771-5bf7-8f39-0233bfbc61fc"
+},
+{
+"Id": "6f5b4ead-f14a-54f2-a970-aaad3510ae31",
+"Name": "PS4 Controller",
+"Description": "A white wireless PlayStation 4 controller featuring responsive analog sticks, precise triggers, vibration feedback, and Bluetooth connectivity.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301415/c1115183f9af6ff475ead215d10327ef_edit_31079238230955.jpg",
+"Price": 2999.99,
+"ProductBrandId": "e0085f0e-5d8b-59b2-bb72-6ba9dc7f4e26",
+"ProductCategoryId": "fbe3c0f7-0771-5bf7-8f39-0233bfbc61fc"
+},
+{
+"Id": "b5f065b2-2f06-5299-a012-6d6ced9d68e4",
+"Name": "Computer Monitor",
+"Description": "A white 27-inch Full HD monitor with a slim bezel design, smooth refresh rate, wide viewing angles, and HDMI connectivity for home and office use.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301414/b6254b49c688a652436ec2a877c0847b_edit_30971536782142.jpg",
+"Price": 7999.99,
+"ProductBrandId": "d97e9ae0-a1fd-5e07-a088-974eca1bb394",
+"ProductCategoryId": "fbe3c0f7-0771-5bf7-8f39-0233bfbc61fc"
+},
+{
+"Id": "93d8fa33-72e9-53be-91ea-1971ca5a465d",
+"Name": "MacBook",
+"Description": "A premium beige-finish Apple laptop with a high-resolution Retina display, 16GB unified memory, 512GB SSD, and an efficient Apple silicon processor.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301413/c77dc8256dba61b57741d1bd17b1b447.jpg",
+"Price": 59999.99,
+"ProductBrandId": "2ec4ece8-5593-5721-b73f-f9549b6e0426",
+"ProductCategoryId": "fbe3c0f7-0771-5bf7-8f39-0233bfbc61fc"
+},
+{
+"Id": "ce1db4ca-3f86-5f14-bfbd-dd238d502436",
+"Name": "PlayStation 5",
+"Description": "Sony PlayStation 5 console with ultra-fast SSD storage, 4K gaming support, ray tracing, high-frame-rate performance, and a wireless DualSense controller.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301411/89475d9a656d38564cd6d02ce9abd48d.jpg",
+"Price": 32999.99,
+"ProductBrandId": "e0085f0e-5d8b-59b2-bb72-6ba9dc7f4e26",
+"ProductCategoryId": "fbe3c0f7-0771-5bf7-8f39-0233bfbc61fc"
+},
+{
+"Id": "7367e1b0-58a1-51e1-9e3e-cbbcf18df429",
+"Name": "Fast Charger",
+"Description": "A compact white fast wall charger with USB-C Power Delivery support, intelligent power management, and a travel-friendly design.",
+  
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301410/b3b2823083bcc379f8243ec859f3c7f2_edit_30929782738044.jpg",
+"Price": 899.99,
+"ProductBrandId": "d97e9ae0-a1fd-5e07-a088-974eca1bb394",
+"ProductCategoryId": "fbe3c0f7-0771-5bf7-8f39-0233bfbc61fc"
+},
+{
+"Id": "0403f30c-faa3-5294-9cd5-6c8b7e32861b",
+"Name": "Smart Watch",
+"Description": "A black smartwatch with a bright AMOLED display, heart-rate tracking, activity monitoring, Bluetooth notifications, and multi-day battery life.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301409/7a7e347d293fe5e371cb8948e55666ae.jpg",
+"Price": 3999.99,
+"ProductBrandId": "d97e9ae0-a1fd-5e07-a088-974eca1bb394",
+"ProductCategoryId": "fbe3c0f7-0771-5bf7-8f39-0233bfbc61fc"
+},
+{
+"Id": "3c49d2ba-0c36-5839-b3a3-667fc7351b41",
+"Name": "Pink Headphones",
+"Description": "Pink wireless over-ear headphones with cushioned ear pads, Bluetooth connectivity, clear stereo sound, and a comfortable lightweight frame.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301408/3321abd96c2ebe6e824eec3661429369.jpg",
+"Price": 2299.99,
+"ProductBrandId": "e0085f0e-5d8b-59b2-bb72-6ba9dc7f4e26",
+"ProductCategoryId": "fbe3c0f7-0771-5bf7-8f39-0233bfbc61fc"
+},
+{
+"Id": "f2d7b24a-c6f5-50f3-b5a0-2536ee781e17",
+"Name": "Sony Silver Camera",
+"Description": "A silver Sony digital camera with a high-resolution sensor, fast autofocus, Full HD video recording, and optical image stabilization.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301406/088393e14fd13271da584f426c52d3ab_edit_30569861084171.jpg",
+"Price": 28999.99,
+"ProductBrandId": "e0085f0e-5d8b-59b2-bb72-6ba9dc7f4e26",
+"ProductCategoryId": "fbe3c0f7-0771-5bf7-8f39-0233bfbc61fc"
+},
+{
+"Id": "11ae95a7-826a-5b83-93f1-9bad62013969",
+"Name": "Beige Headphones",
+"Description": "Beige over-ear wireless headphones with soft padded cushions, Bluetooth connectivity, balanced stereo audio, and a clean minimalist design.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301406/019bdaaa80a0466086bae4c46f07201c.jpg",
+"Price": 2199.99,
+"ProductBrandId": "e0085f0e-5d8b-59b2-bb72-6ba9dc7f4e26",
+"ProductCategoryId": "fbe3c0f7-0771-5bf7-8f39-0233bfbc61fc"
+},
+{
+"Id": "b31c6f68-4a43-5b04-84d3-47da539350e8",
+"Name": "Pink Camera",
+"Description": "A stylish pink compact digital camera with a high-resolution sensor, autofocus, Full HD video recording, and a lightweight portable body.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301404/35ba43ba722368e08c5220e143920a65.jpg",
+"Price": 26999.99,
+"ProductBrandId": "e0085f0e-5d8b-59b2-bb72-6ba9dc7f4e26",
+"ProductCategoryId": "fbe3c0f7-0771-5bf7-8f39-0233bfbc61fc"
+},
+{
+"Id": "544fd13a-7e76-5f7c-87d5-1b2798cfb7a8",
+"Name": "White Smart Watch",
+"Description": "A white smartwatch with a bright touchscreen, activity tracking, heart-rate monitoring, smartphone notifications, and a rechargeable battery.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301403/11bd01ad285d933eb324b02c4664891b.jpg",
+"Price": 3499.99,
+"ProductBrandId": "d97e9ae0-a1fd-5e07-a088-974eca1bb394",
+"ProductCategoryId": "fbe3c0f7-0771-5bf7-8f39-0233bfbc61fc"
+},
+{
+"Id": "6472faec-3a1c-5386-a7df-22ffac30eda1",
+"Name": "White Headphones",
+"Description": "White wireless over-ear headphones with soft ear cushions, Bluetooth connectivity, clear audio, and a comfortable adjustable headband.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301402/4f7a38d8d6426b7a280c61038877e8b9.jpg",
+"Price": 2099.99,
+"ProductBrandId": "e0085f0e-5d8b-59b2-bb72-6ba9dc7f4e26",
+  
+"ProductCategoryId": "fbe3c0f7-0771-5bf7-8f39-0233bfbc61fc"
+},
+{
+"Id": "504e7241-c113-50c9-a019-635a12947c34",
+"Name": "Dell Laptop",
+"Description": "A silver Dell laptop with a 15.6-inch Full HD display, Intel Core i7-class processor, 16GB RAM, 512GB SSD, and integrated graphics for work and study.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301401/f6088ce5deb9e76e0ddd17a8f689e883.jpg",
+"Price": 36999.99,
+"ProductBrandId": "3c06003d-3f1b-5959-8ca7-fcec5cfee669",
+"ProductCategoryId": "fbe3c0f7-0771-5bf7-8f39-0233bfbc61fc"
+},
+{
+"Id": "48ae2e67-34de-5da2-877c-361e751bf1f1",
+"Name": "Pink Wireless Mouse",
+"Description": "A compact pink wireless mouse with a precise optical sensor, ergonomic shape, quiet buttons, and reliable wireless connectivity.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301399/7b33b7c06b45a583e2b1e9616e34492d.jpg",
+"Price": 799.99,
+"ProductBrandId": "a784f67e-9aac-5686-8315-85e4bffd634b",
+"ProductCategoryId": "fbe3c0f7-0771-5bf7-8f39-0233bfbc61fc"
+},
+{
+"Id": "db170e32-149a-50f8-91ef-eb300fa89753",
+"Name": "AirPods",
+"Description": "Compact white wireless earbuds with a charging case, Bluetooth connectivity, clear voice pickup, automatic pairing, and a lightweight in-ear design.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301399/4a523f1b80c7aa765212c4f641551395_edit_30948244326526.jpg",
+"Price": 6999.99,
+"ProductBrandId": "2ec4ece8-5593-5721-b73f-f9549b6e0426",
+"ProductCategoryId": "fbe3c0f7-0771-5bf7-8f39-0233bfbc61fc"
+},
+{
+"Id": "a7ebb68c-5233-50df-b545-f87938759ecc",
+"Name": "Satin Slides",
+"Description": "Elegant satin-look open-toe slides in a soft taupe shade with a comfortable low profile, suitable for casual and relaxed outfits.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301934/magnific_ecommerce-studio-shot-of-_SyO4oXXUb8.png",
+"Price": 999.99,
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "a259dbc9-67d1-5f56-b621-436a67cd3318"
+},
+{
+"Id": "96fba072-c9f1-5bf5-9bc1-54371ebf6134",
+"Name": "Black Leather Shoes",
+"Description": "Classic black leather shoes with a clean silhouette, cushioned insole, and durable outsole for smart everyday and formal wear.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301932/a853c034da19008a2859115171920a26_edit_29460830376937.jpg",
+"Price": 2499.99,
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "a259dbc9-67d1-5f56-b621-436a67cd3318"
+},
+{
+"Id": "7bc56061-f825-59cb-bd95-d0e1387a7bea",
+"Name": "Burgundy Heels",
+"Description": "Elegant burgundy women's heels with a refined pointed silhouette, comfortable lining, and a classic mid-height heel.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301930/850cefc1152de0576506e50668552b79_edit_29797614734830.jpg",
+"Price": 2299.99,
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "a259dbc9-67d1-5f56-b621-436a67cd3318"
+},
+{
+"Id": "f56ac5ad-42cd-5fb5-9127-57049796e4c4",
+"Name": "Black Samba Sneakers",
+"Description": "Classic black low-profile sneakers inspired by the iconic Samba style, featuring a sleek leather upper and durable rubber outsole.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301928/6690ca7846e16be973d134ec95088732.jpg",
+"Price": 5999.99,
+"ProductBrandId": "b30017d3-9883-57b3-940c-0151a5f84715",
+"ProductCategoryId": "a259dbc9-67d1-5f56-b621-436a67cd3318"
+},
+{
+"Id": "c215444a-2524-5972-bc0f-5cc983fdf0d5",
+"Name": "Black High Heels",
+"Description": "Minimal black high-heel pumps with a sleek pointed silhouette, smooth finish, and elegant design for evening and formal outfits.",
+  
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301926/8a5b1f020b2aa0be484202f85e7fc690.jpg",
+"Price": 2199.99,
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "a259dbc9-67d1-5f56-b621-436a67cd3318"
+},
+{
+"Id": "fe6e72a6-f651-50ac-8987-c4b2b94302fa",
+"Name": "White Pink Sneakers",
+"Description": "White sneakers with soft pink accents, cushioned midsole, breathable upper, and a versatile everyday sporty design.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301924/4046c3d6e7a4be02560f2a60f48d9673_edit_29556944738411.jpg",
+"Price": 4499.99,
+"ProductBrandId": "b30017d3-9883-57b3-940c-0151a5f84715",
+"ProductCategoryId": "a259dbc9-67d1-5f56-b621-436a67cd3318"
+},
+{
+"Id": "1c244110-5e21-564d-9412-33e201906420",
+"Name": "Grey Everyday Sneakers",
+"Description": "Grey casual sneakers with a lightweight cushioned sole, breathable upper, and comfortable everyday construction.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301923/magnific_a-pair-of-shoes-isolated-_tCfu6IWmZJ.png",
+"Price": 2999.99,
+"ProductBrandId": "f91a3dd3-cd53-5d64-9ac0-005b1c5c1973",
+"ProductCategoryId": "a259dbc9-67d1-5f56-b621-436a67cd3318"
+},
+{
+"Id": "318ed2a7-2490-5727-b916-fec1010e0699",
+"Name": "White Sneakers",
+"Description": "Clean white everyday sneakers with a cushioned rubber sole, simple low-top silhouette, and versatile casual styling.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301921/d0093839ce97311e6f7d6587a1b128cb_edit_29529616042640.jpg",
+"Price": 2799.99,
+"ProductBrandId": "33333333-3333-3333-3333-333333333333",
+"ProductCategoryId": "a259dbc9-67d1-5f56-b621-436a67cd3318"
+},
+{
+"Id": "fcd977bc-2e0a-5a19-a18d-6b9082f875be",
+"Name": "White Slides",
+"Description": "Simple white women's slides with a soft footbed, open design, and lightweight construction for everyday comfort.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301919/df5b11d5625a6c3efc78b313a7b95699.jpg",
+"Price": 799.99,
+"ProductBrandId": "11111111-1111-1111-1111-111111111111",
+"ProductCategoryId": "a259dbc9-67d1-5f56-b621-436a67cd3318"
+},
+{
+"Id": "8ade19bd-4b9d-541f-ae50-329c89112ec3",
+"Name": "Pink Ballet Flats",
+"Description": "Feminine pink ballet flats with a soft rounded toe, flexible sole, and lightweight construction for comfortable everyday wear.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301917/cf4334bf836a15f5ec4624a53cf01bb1_edit_29695495636535.jpg",
+"Price": 1299.99,
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "a259dbc9-67d1-5f56-b621-436a67cd3318"
+},
+{
+"Id": "ec18122c-a0de-54ff-bf3a-4f3b9b2e0237",
+"Name": "White Open Heels",
+"Description": "Elegant white open-back heels with a refined pointed silhouette, slim heel, and clean finish for dressy occasions.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301916/a28533d8dbbcbfc4509289fe74b1adb8_edit_29610627423807.jpg",
+"Price": 1999.99,
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "a259dbc9-67d1-5f56-b621-436a67cd3318"
+},
+{
+"Id": "20df4704-65bd-5918-bcff-b596fbce6504",
+"Name": "Grey Puma Sneakers",
+"Description": "Grey Puma sneakers with a cushioned sole, breathable upper, supportive construction, and a versatile sporty profile.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301914/aa78ecf970c844b467c131f25a5b5559_edit_29438130979082.jpg",
+"Price": 3999.99,
+"ProductBrandId": "f91a3dd3-cd53-5d64-9ac0-005b1c5c1973",
+"ProductCategoryId": "a259dbc9-67d1-5f56-b621-436a67cd3318"
+  
+},
+{
+"Id": "54f84dd5-0908-5936-ac3d-8bb82723b5a2",
+"Name": "White Crocs Clogs",
+"Description": "White lightweight clogs with a roomy fit, ventilated upper, comfortable molded footbed, and easy slip-on construction.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301912/2ee682206a78138e74570c8334eedab0_edit_29489433150364.jpg",
+"Price": 2499.99,
+"ProductBrandId": "f91a3dd3-cd53-5d64-9ac0-005b1c5c1973",
+"ProductCategoryId": "a259dbc9-67d1-5f56-b621-436a67cd3318"
+},
+{
+"Id": "ac9ee12a-a08f-5c2c-b377-0d5a1c75b737",
+"Name": "Brown Leather Loafers",
+"Description": "Brown men's leather loafers with a polished finish, cushioned footbed, and timeless slip-on silhouette for smart casual wear.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301910/bd885aa34e02cbaa3a50d0d1fef4220c_edit_30040782808956.jpg",
+"Price": 2399.99,
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "a259dbc9-67d1-5f56-b621-436a67cd3318"
+},
+{
+"Id": "7ddfa0fa-9546-5d58-b955-4d954a1eee3b",
+"Name": "White Sport Sneakers",
+"Description": "White athletic sneakers with a breathable upper, cushioned midsole, flexible outsole, and lightweight construction for everyday activity.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301908/a0450ff5565cdeb0f671ce7cc7b9df7c_edit_29408861262114.jpg",
+"Price": 3299.99,
+"ProductBrandId": "33333333-3333-3333-3333-333333333333",
+"ProductCategoryId": "a259dbc9-67d1-5f56-b621-436a67cd3318"
+},
+{
+"Id": "f6472383-ad0e-5cfe-a237-6fa3b2d67e18",
+"Name": "Black Slides",
+"Description": "Minimal black slip-on slides with a comfortable molded footbed and lightweight outsole, ideal for casual everyday use.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301907/810fc6e03cd04b540a85e9eab336535a_edit_30369008669195.jpg",
+"Price": 799.99,
+"ProductBrandId": "b30017d3-9883-57b3-940c-0151a5f84715",
+"ProductCategoryId": "a259dbc9-67d1-5f56-b621-436a67cd3318"
+},
+{
+"Id": "3e56fee6-c275-5d31-bcfd-0ac9d464e46f",
+"Name": "Black Backpack",
+"Description": "A practical black backpack made from durable polyester with a spacious main compartment, padded straps, and multiple organizer pockets.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301833/a47e784f6a3252ffe06749ebc2dad0af_edit_30598598760983.jpg",
+"Price": 1499.99,
+"ProductBrandId": "33333333-3333-3333-3333-333333333333",
+"ProductCategoryId": "5f7fb357-5127-5d29-8aed-62f9e703b054"
+},
+{
+"Id": "fd3804bf-d646-5eb2-952d-fcb626256c23",
+"Name": "White Shoulder Bag",
+"Description": "A stylish white women's shoulder bag made from smooth synthetic leather with a compact interior and adjustable strap for everyday outings.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301831/d041bfab020c06da13e1c2144147b9ce_edit_29654949383843.jpg",
+"Price": 1799.99,
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "5f7fb357-5127-5d29-8aed-62f9e703b054"
+},
+{
+"Id": "b132f68e-a48d-5519-9f81-ece7c9ccec9e",
+"Name": "White Backpack",
+"Description": "A clean white casual backpack with a lightweight polyester construction, roomy interior, padded shoulder straps, and practical storage pockets.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301829/9bc396844807d354972f90f432f9d36a_edit_30227161159718.jpg",
+"Price": 1399.99,
+"ProductBrandId": "11111111-1111-1111-1111-111111111111",
+"ProductCategoryId": "5f7fb357-5127-5d29-8aed-62f9e703b054"
+},
+{
+"Id": "955c5462-0d5c-5790-a9c4-6235cb81482b",
+"Name": "White Tote Bag",
+"Description": "A versatile white tote bag made from sturdy canvas with a spacious open interior and comfortable carry handles for everyday use.",
+  
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301828/01189aacc3adcd7d79b914d19ef79606_edit_30349779456234.jpg",
+"Price": 899.99,
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "5f7fb357-5127-5d29-8aed-62f9e703b054"
+},
+{
+"Id": "c3c81525-6708-5d0a-a5e0-d4df63dea147",
+"Name": "Burgundy Shoulder Bag",
+"Description": "A burgundy women's shoulder bag crafted from textured faux leather with a structured shape, secure closure, and elegant everyday design.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301826/c9d62310857f9bb9daa3e7da81c20b86_edit_29850582143039.jpg",
+"Price": 1899.99,
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "5f7fb357-5127-5d29-8aed-62f9e703b054"
+},
+{
+"Id": "752abdf6-af3e-5650-8bfd-387c2b9c8bd9",
+"Name": "Black City Backpack",
+"Description": "A durable black everyday backpack with a water-resistant polyester shell, padded shoulder straps, and organized storage for daily essentials.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301824/922e98fa686c3ebf070213561b229cfa_edit_30324016178066.jpg",
+"Price": 1599.99,
+"ProductBrandId": "b30017d3-9883-57b3-940c-0151a5f84715",
+"ProductCategoryId": "5f7fb357-5127-5d29-8aed-62f9e703b054"
+},
+{
+"Id": "09b0ec3a-33e6-59c7-9a25-471fc320b6e5",
+"Name": "Black Travel Backpack",
+"Description": "A spacious black backpack made from durable nylon with multiple compartments, reinforced handles, and comfortable padded shoulder straps.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301822/c759f72cef6de6d92c200a9c8db4698f.jpg",
+"Price": 1699.99,
+"ProductBrandId": "33333333-3333-3333-3333-333333333333",
+"ProductCategoryId": "5f7fb357-5127-5d29-8aed-62f9e703b054"
+},
+{
+"Id": "cb3324c7-89bd-538b-a4f2-fa121768d03b",
+"Name": "Pink Backpack",
+"Description": "A playful pink backpack made from lightweight polyester with a roomy main compartment, adjustable padded straps, and practical front storage.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301820/b265541e3405667d87974db7c108725e_edit_30281962873239.jpg",
+"Price": 1299.99,
+"ProductBrandId": "f91a3dd3-cd53-5d64-9ac0-005b1c5c1973",
+"ProductCategoryId": "5f7fb357-5127-5d29-8aed-62f9e703b054"
+},
+{
+"Id": "b4611108-87c2-5a52-9cb4-455633f3c492",
+"Name": "Yellow Mini Backpack",
+"Description": "A compact bright-yellow backpack made from durable synthetic fabric with adjustable straps and enough space for everyday essentials.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301820/b42d83b5cb6b3c3e56b08bd8e2f7589a.jpg",
+"Price": 1199.99,
+"ProductBrandId": "11111111-1111-1111-1111-111111111111",
+"ProductCategoryId": "5f7fb357-5127-5d29-8aed-62f9e703b054"
+},
+{
+"Id": "cabeab9c-ce6c-5ba2-9f81-1c0332ab5bba",
+"Name": "Grey Cap",
+"Description": "A classic grey cotton-blend baseball cap with an adjustable back strap, curved brim, and breathable construction for everyday wear.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301555/31ba571aa6c8032757607c10b79ae20c.jpg",
+"Price": 699.99,
+"ProductBrandId": "b30017d3-9883-57b3-940c-0151a5f84715",
+"ProductCategoryId": "e575a443-42bc-5447-92f0-5e84b36803a9"
+},
+{
+"Id": "c8a70951-206f-56be-b815-cf7f8a030d61",
+"Name": "Black Sunglasses",
+"Description": "Modern black sunglasses with UV-protective lenses, a lightweight frame, and a versatile everyday silhouette.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301553/15c4b4ffa3a88f2760f9a54731297323_edit_30474991538790.jpg",
+"Price": 799.99,
+  
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "e575a443-42bc-5447-92f0-5e84b36803a9"
+},
+{
+"Id": "4c08d76e-b57d-5495-b19f-2650eeecbb59",
+"Name": "Black Leather Watch",
+"Description": "A women's wristwatch with a black leather strap, refined analog dial, quartz movement, and elegant minimalist case.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301552/122b7f2a014b24146dc977a732281197.jpg",
+"Price": 1999.99,
+"ProductBrandId": "5d24a677-5310-5c5b-837e-7627ec49bf6c",
+"ProductCategoryId": "e575a443-42bc-5447-92f0-5e84b36803a9"
+},
+{
+"Id": "913096a4-dc05-5de8-8cde-e5aa2c4d135c",
+"Name": "Silver Metal Watch",
+"Description": "A men's silver-tone metal watch with a clean analog dial, stainless-steel bracelet, quartz movement, and durable everyday case.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301551/5b989a4327ffb542ca239ad56272fc10_edit_30144031817250.jpg",
+"Price": 2499.99,
+"ProductBrandId": "5d24a677-5310-5c5b-837e-7627ec49bf6c",
+"ProductCategoryId": "e575a443-42bc-5447-92f0-5e84b36803a9"
+},
+{
+"Id": "2b224e9a-f2f9-56af-9aad-333ebb5cfdd6",
+"Name": "Pink Leather Watch",
+"Description": "A women's pink leather-strap watch with a polished analog dial, quartz movement, and lightweight elegant case.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301550/1ea12556216675b4ab66f4822b9b9177_edit_29674458329200.jpg",
+"Price": 1899.99,
+"ProductBrandId": "5d24a677-5310-5c5b-837e-7627ec49bf6c",
+"ProductCategoryId": "e575a443-42bc-5447-92f0-5e84b36803a9"
+},
+{
+"Id": "8871e83b-518b-5b31-a2ea-eee7de831560",
+"Name": "Black Sunglasses",
+"Description": "Classic black sunglasses featuring UV-protective lenses, a lightweight frame, and a clean versatile design for everyday use.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301548/ea4f1edeefef1fba2ea614eb07a56844_edit_28431358761393.jpg",
+"Price": 749.99,
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "e575a443-42bc-5447-92f0-5e84b36803a9"
+},
+{
+"Id": "ccc4c260-bd6b-59be-a214-f705ef65d2b2",
+"Name": "Women's Sunglasses",
+"Description": "Women's fashion sunglasses with UV-protective lenses and a lightweight frame designed to complement casual and summer outfits.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301547/b13f86118a31a0dbfeecea2bf7409f84_edit_29747075864068.jpg",
+"Price": 849.99,
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "e575a443-42bc-5447-92f0-5e84b36803a9"
+},
+{
+"Id": "d77dc4fb-4d68-501b-a295-0d6e5a52216a",
+"Name": "Silver Casio Watch",
+"Description": "A silver-tone Casio-style watch with a durable metal bracelet, classic analog display, quartz movement, and practical everyday design.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301545/af60bbfda927160ebd49d13334160bda_edit_30185343260515.jpg",
+"Price": 2299.99,
+"ProductBrandId": "5d24a677-5310-5c5b-837e-7627ec49bf6c",
+"ProductCategoryId": "e575a443-42bc-5447-92f0-5e84b36803a9"
+},
+{
+"Id": "9f2a7852-3a30-5c0e-991a-b825bbc272d6",
+"Name": "Black Leather Belt",
+"Description": "A classic men's black leather belt with a durable metal buckle, smooth genuine-leather finish, and adjustable everyday fit.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301544/a3efa2a7e27f20ecc10fd8108102dffb.jpg",
+"Price": 799.99,
+"ProductBrandId": "11111111-1111-1111-1111-111111111111",
+"ProductCategoryId": "e575a443-42bc-5447-92f0-5e84b36803a9"
+},
+{
+"Id": "bca67091-91b4-5501-a7b2-4eb3a8f374ca",
+"Name": "Brown Leather Belt",
+  
+"Description": "A women's brown leather belt with a polished buckle, smooth finish, and versatile design for jeans, trousers, and dresses.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301542/5702ebcf6f3d1a70a181e845e33ff9c7_edit_29950321641542.jpg",
+"Price": 749.99,
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "e575a443-42bc-5447-92f0-5e84b36803a9"
+},
+{
+"Id": "8551e4a6-22c9-56f2-92eb-0120e6792219",
+"Name": "Metal Bracelet",
+"Description": "A minimalist metal bracelet with a polished finish and comfortable lightweight construction, designed for easy everyday styling.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301542/a58ee8ec6780f73dd28e5aaaa1082796.jpg",
+"Price": 599.99,
+"ProductBrandId": "44444444-4444-4444-4444-444444444444",
+"ProductCategoryId": "e575a443-42bc-5447-92f0-5e84b36803a9"
+},
+{
+"Id": "1f9b5c04-b630-5fce-917c-2cba8d45f8f1",
+"Name": "Gold Women's Watch",
+"Description": "An elegant gold-tone women's watch with a polished metal case, refined analog dial, quartz movement, and sophisticated dress style.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301540/a1cf326b67904f25bf1eeb297c201c84.jpg",
+"Price": 2999.99,
+"ProductBrandId": "5d24a677-5310-5c5b-837e-7627ec49bf6c",
+"ProductCategoryId": "e575a443-42bc-5447-92f0-5e84b36803a9"
+},
+{
+"Id": "478f0592-e522-556f-a827-3f04e0a4fbe1",
+"Name": "Brown Leather Watch",
+"Description": "A men's brown leather-strap watch with a classic analog dial, quartz movement, stainless-steel case, and timeless casual design.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301539/21147f88664ab20f8382b295eb75793c_edit_29908424337340.jpg",
+"Price": 2499.99,
+"ProductBrandId": "5d24a677-5310-5c5b-837e-7627ec49bf6c",
+"ProductCategoryId": "e575a443-42bc-5447-92f0-5e84b36803a9"
+},
+{
+"Id": "5bae2a11-1ed6-5cfe-bbe2-47bb3f7d3fb7",
+"Name": "Grey Cap",
+"Description": "A casual grey baseball cap made from breathable cotton-blend fabric with an adjustable closure and curved brim for everyday comfort.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301537/32a365ea2ea57c55fa39edae4905c521.jpg",
+"Price": 649.99,
+"ProductBrandId": "f91a3dd3-cd53-5d64-9ac0-005b1c5c1973",
+"ProductCategoryId": "e575a443-42bc-5447-92f0-5e84b36803a9"
+},
+{
+"Id": "695d7aa4-9d6d-5435-be1c-7bbf66275ecc",
+"Name": "Nike White Cap",
+"Description": "A white Nike baseball cap made from breathable cotton fabric with an adjustable back closure and curved brim for everyday wear.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301536/707b6565dafaf214edcdeb09e7014a93.jpg",
+"Price": 899.99,
+"ProductBrandId": "33333333-3333-3333-3333-333333333333",
+"ProductCategoryId": "e575a443-42bc-5447-92f0-5e84b36803a9"
+},
+{
+"Id": "5fe25a93-91f3-5131-bb45-0385d1d5bf78",
+"Name": "Brown Women's Belt",
+"Description": "A brown women's leather belt with a smooth finish, classic buckle, and versatile profile for casual and smart-casual outfits.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301536/326b23d7995c6fbaa5c6099a404a171f_edit_29994249390119.jpg",
+"Price": 749.99,
+"ProductBrandId": "22222222-2222-2222-2222-222222222222",
+"ProductCategoryId": "e575a443-42bc-5447-92f0-5e84b36803a9"
+},
+{
+"Id": "cbe84dc3-5aef-5cda-a147-a39da72f6c28",
+"Name": "Black Fashion Sunglasses",
+"Description": "Stylish black sunglasses with UV-protective lenses, a lightweight frame, and a modern fashion-forward silhouette.",
+"PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301536/6c1ce07c08e2bdcddc8dc5b87f0acb38_edit_30501379885811.jpg",
+  "Price": 899.99,
+  "ProductBrandId": "22222222-2222-2222-2222-222222222222",
+  "ProductCategoryId": "e575a443-42bc-5447-92f0-5e84b36803a9"
+},
+{
+  "Id": "f01332c4-8632-5a32-81b2-d34274369f85",
+  "Name": "Silver Men's Ring",
+  "Description": "A minimalist men's silver-tone ring with a polished metal finish and clean profile, designed for simple everyday styling.",
+  "PictureUrl": "https://res.cloudinary.com/d0nhoh94/image/upload/v1786301533/39df35dbf5d1ecceb07040e0b419c61a_edit_30118312116843.jpg",
+  "Price": 499.99,
+  "ProductBrandId": "44444444-4444-4444-4444-444444444444",
+  "ProductCategoryId": "e575a443-42bc-5447-92f0-5e84b36803a9"
+}
+]
