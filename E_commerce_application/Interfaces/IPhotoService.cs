@@ -2,7 +2,7 @@
 
 public interface IPhotoService
 {
-    Task<string> UploadAsync(Stream stream, string fileName);
+    Task<string> UploadAsync(Stream stream, string fileName, string categoryName);
 
     Task DeleteAsync(string imageUrl);
 }

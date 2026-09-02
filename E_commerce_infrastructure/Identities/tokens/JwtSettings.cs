@@ -1,6 +1,6 @@
 ﻿namespace E_commerce_infrastructure.Identities;
 
-public class JwtSettinngs
+public class JwtSettings
 {
     public const string SectionName = "JWT";
 

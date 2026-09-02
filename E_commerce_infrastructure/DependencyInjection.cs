@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using StackExchange.Redis;
 
 namespace E_commerce_infrastructure;
 
@@ -47,7 +48,22 @@ public static class DependencyInjection
             .AddRoles<ApplicationRole>()
             .AddEntityFrameworkStores<AppIdentityDbContext>();
             // .AddDefaultTokenProviders();
+            
+            
+            //
+            // services.AddAuthorization();
+            // services.AddHttpContextAccessor();    
+//JWT
+        services.Configure<JwtSettings>(config.GetSection(JwtSettings.SectionName));
+        var jwtSettings = config.GetSection(JwtSettings.SectionName).Get<JwtSettings>()
+                          ?? throw new InvalidOperationException($"Configuration section '{JwtSettings.SectionName}' is missing.");
 
+        if (string.IsNullOrWhiteSpace(jwtSettings.SecretKey) || jwtSettings.SecretKey.Length < 32)
+            throw new InvalidOperationException("Jwt:Secret must be at least 32 characters.");
+    
+        services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
+        services.AddScoped<IRefreshTokenService, RefreshTokenService>();
+    
 
 //cloudinary register
 
@@ -59,28 +75,51 @@ public static class DependencyInjection
         
 //Email register not finished      
 
-        // services.Configure<EmailSettings>(
-        //     config.GetSection(EmailSettings.SectionName));
-        //
-        // var emailSettings = config.GetSection(EmailSettings.SectionName).Get<EmailSettings>()
-        //     ?? throw new InvalidOperationException(
-        //         $"Configuration section '{EmailSettings.SectionName}' is missing.");
-        //
-        // services
-        //     .AddFluentEmail(emailSettings.FromEmail, emailSettings.FromName)
-        //     .AddSmtpSender(emailSettings.Host, emailSettings.Port);
+        services.Configure<EmailSettings>(
+            config.GetSection(EmailSettings.SectionName));
+        
+        var emailSettings = config.GetSection(EmailSettings.SectionName).Get<EmailSettings>()
+            ?? throw new InvalidOperationException(
+                $"Configuration section '{EmailSettings.SectionName}' is missing.");
+        
+        services
+            .AddFluentEmail(emailSettings.FromEmail, emailSettings.FromName)
+            .AddSmtpSender(emailSettings.Host, emailSettings.Port);
         
         
-        // services.AddScoped<
-        //     IEmailVerificationCodeStore,
-        //     EmailVerificationCodeStore>();
+        services.AddScoped<
+            IEmailVerificationCodeStore,
+            EmailVerificationCodeStore>();
         
         
 //redis part not finished
         
-        // services.AddScoped<IRedisService, RedisService>();
+        services.Configure<RedisSettings>(
+            config.GetSection(RedisSettings.SectionName));
+        
+        services.AddSingleton<IConnectionMultiplexer>(sp =>
+        {
+            var settings = sp
+                .GetRequiredService<IOptions<RedisSettings>>()
+                .Value;
+
+            var configuration = new ConfigurationOptions
+            {
+                EndPoints =
+                {
+                    { settings.Endpoint, settings.Port }
+                },
+                User = settings.User,
+                Password = settings.Password
+            };
+
+            return ConnectionMultiplexer.Connect(configuration);
+        });
         
         
+        
+//seed data 
+
         services.AddScoped<IDataSeeder, IdentitySeeder>();
         services.AddScoped<IDataSeeder, BrandSeeder>();
         services.AddScoped<IDataSeeder, CategorySeeder>();

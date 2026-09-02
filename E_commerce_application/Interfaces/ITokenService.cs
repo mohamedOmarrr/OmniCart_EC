@@ -1,6 +1,8 @@
-﻿namespace E_commerce_application.Interfaces;
+﻿using E_commerce_application.Model;
+
+namespace E_commerce_application.Interfaces;
 
 public interface ITokenService
 {
-    
+    Task<string> CreateTokenAsync(UserTokenData user);
 }

@@ -10,4 +10,8 @@
       <ProjectReference Include="..\E_commerce_domain\E_commerce_domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="DTOs\" />
+    </ItemGroup>
+
 </Project>

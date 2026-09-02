@@ -20,12 +20,13 @@ public class CloudinaryService : IPhotoService
     }
 
     public async Task<string> UploadAsync( Stream stream,
-        string fileName)
+        string fileName,
+        string categoryName)
     {
         var uploadParams = new ImageUploadParams
         {
             File = new FileDescription(fileName, stream),
-            Folder = "products"
+            Folder = $"products{categoryName}"
         };
 
         var result = await _cloudinary.UploadAsync(uploadParams);

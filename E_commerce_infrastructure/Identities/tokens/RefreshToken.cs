@@ -11,4 +11,6 @@ public class RefreshToken
     public DateTimeOffset ExpiresAt { get; set; }
 
     public bool Revoked { get; set; } = false;
+    
+    public ApplicationUser? User { get; set; }
 }
