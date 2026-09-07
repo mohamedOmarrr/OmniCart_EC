@@ -22,7 +22,7 @@ public class Result<TValue> : Result
     public static Result<TValue> Success(TValue value) =>
         new(value, true, Error.None);
 
-    public static new Result<TValue> Failure(Error error) =>
+    public new static Result<TValue> Failure(Error error) =>
         new(default, false, error);
 
     public TResult Match<TResult>(

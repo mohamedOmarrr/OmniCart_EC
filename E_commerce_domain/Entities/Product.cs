@@ -11,7 +11,8 @@ public class Product :BaseEntity
 
     public string Name { get; private set; } = null!;
     public string Description { get; private set; } = null!;
-    public string PictureUrl { get; private set; } = null!;
+    
+    public string ImageUrl { get; private set; } = null!;
     public decimal Price { get; private set; }
 
     public Guid ProductBrandId { get; private set; }
@@ -28,7 +29,7 @@ public class Product :BaseEntity
         Guid id,
         string name,
         string description,
-        string pictureUrl,
+        string imageUrl,
         decimal price,
         Guid productBrandId,
         Guid productCategoryId)
@@ -48,10 +49,10 @@ public class Product :BaseEntity
         if (description.Length > MaxDescriptionLength)
             return Result<Product>.Failure(ProductError.DescriptionTooLong);
 
-        if (string.IsNullOrWhiteSpace(pictureUrl))
+        if (string.IsNullOrWhiteSpace(imageUrl))
             return Result<Product>.Failure(ProductError.InvalidPictureUrl);
 
-        if (pictureUrl.Length > MaxPictureUrlLength)
+        if (imageUrl.Length > MaxPictureUrlLength)
             return Result<Product>.Failure(ProductError.PictureUrlTooLong);
 
         if (price <= 0)
@@ -68,7 +69,7 @@ public class Product :BaseEntity
             Id = id,
             Name = name.Trim(),
             Description = description.Trim(),
-            PictureUrl = pictureUrl.Trim(),
+            ImageUrl = imageUrl.Trim(),
             Price = price,
             ProductBrandId = productBrandId,
             ProductCategoryId = productCategoryId
@@ -108,10 +109,10 @@ public class Product :BaseEntity
         if (string.IsNullOrWhiteSpace(pictureUrl))
             return Result.Failure(ProductError.InvalidPictureUrl);
 
-        if (pictureUrl.Length > MaxPictureUrlLength)
+        if (ImageUrl.Length > MaxPictureUrlLength)
             return Result.Failure(ProductError.PictureUrlTooLong);
 
-        PictureUrl = pictureUrl.Trim();
+        ImageUrl = pictureUrl.Trim();
 
         return Result.Success();
     }

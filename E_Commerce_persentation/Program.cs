@@ -1,5 +1,8 @@
+using Asp.Versioning;
 using E_commerce_infrastructure;
 using E_commerce_infrastructure.Seeding;
+using E_Commerce_persentation;
+using E_Commerce_persentation.EndPoints;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,8 +10,25 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
+builder.Services.AddPresentation();
 builder.Services.AddInfrastructure(builder.Configuration);
+
+
+
 var app = builder.Build();
+
+
+app.UseAuthentication();
+
+app.UseAuthorization();
+
+var apiVersionSet = app.NewApiVersionSet()
+    .HasApiVersion(new ApiVersion(1, 0))
+    .ReportApiVersions()
+    .Build();
+
+
+app.MapProductEndpoints(apiVersionSet);
 
 using (var scope = app.Services.CreateAsyncScope())
 {
