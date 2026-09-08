@@ -1,9 +1,8 @@
-﻿namespace E_commerce_application.Model;
+﻿namespace E_commerce_infrastructure.Identities;
 
-public class UserTokenData
-{
-    public Guid UserId { get; set; }
-    public string Email { get; set; } = null!;
-    public string DisplayName { get; set; } = null!;
-    public string Role { get; set; } = null!;
-}
+public record UserTokenData(
+        Guid UserId,
+        string Email,
+        string DisplayName,
+        string? Role
+    );

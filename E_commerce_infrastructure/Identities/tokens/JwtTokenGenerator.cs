@@ -2,7 +2,6 @@
 using System.Security.Claims;
 using System.Text;
 using E_commerce_application.Interfaces;
-using E_commerce_application.Model;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 

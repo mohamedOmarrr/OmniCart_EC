@@ -1,4 +1,5 @@
-﻿using E_commerce_infrastructure.Identities;
+﻿using E_commerce_domain.Constants;
+using E_commerce_infrastructure.Identities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;

@@ -1563,7 +1563,8 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "E_commerce_domain": "1.0.0",
-          "MediatR": "14.2.0"
+          "MediatR": "14.2.0",
+          "Microsoft.Extensions.Identity.Core": "10.0.10"
         },
         "compile": {
           "bin/placeholder/E_commerce_application.dll": {}
@@ -1575,6 +1576,9 @@
       "E_commerce_domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Extensions.Identity.Stores": "10.0.10"
+        },
         "compile": {
           "bin/placeholder/E_commerce_domain.dll": {}
         },
