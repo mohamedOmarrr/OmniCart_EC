@@ -16,7 +16,7 @@ public static class UserEndpoints
         ApiVersionSet apiVersionSet)
     {
         var group = endpoints
-            .MapGroup("/api/v{version:apiVersion}/User")
+            .MapGroup("/api/v{version:apiVersion}/user")
             .WithTags("Products")
             .WithApiVersionSet(apiVersionSet)
             .HasApiVersion(new ApiVersion(1, 0));
