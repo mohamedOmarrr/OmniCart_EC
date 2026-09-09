@@ -20,6 +20,21 @@ public static class ResultResponseExtensions
                 value,
                 message));
     }
+    
+    public static IResult GetListedResults<T>(
+        this Result<IReadOnlyList<T>> result,
+        string message)
+    {
+        if (result.IsFailure)
+            return result.Error.ToProblemDetails();
+
+        var value = result.Value;
+
+        return Results.Ok(
+            new ApiResponse<IReadOnlyList<T>>(
+                value,
+                message));
+    }
 
     public static IResult GetSpecificItem<T>(
         this Result<T> result,

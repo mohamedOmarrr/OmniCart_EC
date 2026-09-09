@@ -31,6 +31,8 @@ var apiVersionSet = app.NewApiVersionSet()
 app.MapProductEndpoints(apiVersionSet);
 app.MapUserEndpoints(apiVersionSet);
 app.MapAuthEndpoints(apiVersionSet);
+app.MapBrandEndpoints(apiVersionSet);
+app.MapCategoryEndpoints(apiVersionSet);
 
 using (var scope = app.Services.CreateAsyncScope())
 {
