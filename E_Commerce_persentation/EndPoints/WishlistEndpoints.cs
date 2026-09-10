@@ -9,14 +9,14 @@ using MediatR;
 
 namespace E_Commerce_persentation.EndPoints;
 
-public static class CategoryEndpoints
+public static class WishlistEndpoints
 {
-    public static IEndpointRouteBuilder MapCategoryEndpoints(
+    public static IEndpointRouteBuilder MapWishlistEndpoints(
         this IEndpointRouteBuilder endpoints,
         ApiVersionSet apiVersionSet)
     {
         var group = endpoints
-            .MapGroup("/api/v{version:apiVersion}/category")
+            .MapGroup("/api/v{version:apiVersion}/wish")
             .WithTags("Products")
             .WithApiVersionSet(apiVersionSet)
             .HasApiVersion(new ApiVersion(1, 0));
@@ -25,18 +25,19 @@ public static class CategoryEndpoints
                 ISender sender,
                 CancellationToken ct) =>
             {
-                var query = new CategoryQuery();
+                var query = new WishlistQuery();
                 var result = await sender.Send(query, ct);
 
-                return result.GetListedResults("Categories retrieved successfully");
+                return result.GetListedResults("Your Fav Products in Wishlist retrieved successfully");
             })
-            .WithSummary("Gets all Categories")
-            .WithDescription("Returns a list of Categories (ID, Name)")
-            .Produces<ApiResponse<IReadOnlyList<CategoryDto>>>(StatusCodes.Status200OK);
+            .WithSummary("Gets all Products in Wishlist")
+            .WithDescription("Returns a list of Products that user Sored in Wishlist")
+            .Produces<ApiResponse<IReadOnlyList<ProductDTO>>>(StatusCodes.Status200OK);
+        
         
         
         group.MapPost("/", async (
-                [AsParameters] NamedCategoryCommand command,
+                [AsParameters] WishlistCommand command,
                 ISender sender,
                 CancellationToken ct) =>
             {
@@ -44,12 +45,11 @@ public static class CategoryEndpoints
                 
                 var result = await sender.Send(command, ct);
 
-                return result.CommandResult("Category created successfully", StatusCodes.Status201Created);
+                return result.CommandResult("Product Added to Wishlist successfully", StatusCodes.Status201Created);
             })
-            .WithSummary("Create Category")
-            .WithDescription("Returns Category ID")
+            .WithSummary("Create Wishlist or Add Product to it")
+            .WithDescription("Returns Product ID that you Added to Wishlist")
             .Produces<ApiResponse<Guid>>(StatusCodes.Status201Created);
-
 
         return endpoints;
     }

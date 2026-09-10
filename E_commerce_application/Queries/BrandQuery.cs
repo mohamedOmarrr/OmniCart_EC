@@ -5,4 +5,4 @@ using MediatR;
 
 namespace E_commerce_application.Queries;
 
-public record EmptyBrandQuery(): IRequest<Result<IReadOnlyList<BrandDto>>>;
+public record BrandQuery(): IRequest<Result<IReadOnlyList<BrandDto>>>;

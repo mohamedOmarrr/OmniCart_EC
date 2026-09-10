@@ -4,4 +4,4 @@ using MediatR;
 
 namespace E_commerce_application.Queries;
 
-public record EmptyCategoryQuery(): IRequest<Result<IReadOnlyList<CategoryDto>>>;
+public record WishlistQuery(): IRequest<Result<IReadOnlyList<ProductDTO>>>;

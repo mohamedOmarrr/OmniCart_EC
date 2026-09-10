@@ -25,6 +25,10 @@ public static class DependencyInjection
                 options.GroupNameFormat = "'v'VVV";
                 options.SubstituteApiVersionInUrl = true;
             });
+
+        services.AddHttpContextAccessor();
+
+        services.AddScoped<ICurrentUserService, ICurrentUserService>();
         
         return services;  
     }

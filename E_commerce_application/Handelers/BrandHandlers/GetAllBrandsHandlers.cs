@@ -8,10 +8,10 @@ using MediatR;
 namespace E_commerce_application.Handelers.BrandHandlers;
 
 public class GetAllBrandsHandlers( IRepository<Brand> repository)
-    : IRequestHandler<EmptyBrandQuery, Result<IReadOnlyList<BrandDto>>>
+    : IRequestHandler<BrandQuery, Result<IReadOnlyList<BrandDto>>>
 {
     public async Task<Result<IReadOnlyList<BrandDto>>> Handle(
-        EmptyBrandQuery request,
+        BrandQuery request,
         CancellationToken cancellationToken)
     {
 

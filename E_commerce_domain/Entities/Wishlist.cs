@@ -2,7 +2,18 @@
 
 public class Wishlist : BaseEntity
 {
-    public string UserId { get; set; } = null!;
+    public Guid UserId { get; set; }
 
     public ICollection<WishItem> WishItems { get; set; } = new List<WishItem>();
+
+    public void addWishItem(Guid ProductId)
+    {
+        var wishItem = new WishItem
+        {
+            WishlistId = UserId,
+            ProductId = ProductId,
+        };
+        
+        WishItems.Add(wishItem);
+    }
 }

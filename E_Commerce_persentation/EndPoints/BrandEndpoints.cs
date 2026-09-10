@@ -26,7 +26,7 @@ public static class BrandEndpoints
                 ISender sender,
                 CancellationToken ct) =>
             {
-                var query = new EmptyBrandQuery();
+                var query = new BrandQuery();
                 var result = await sender.Send(query, ct);
 
                 return result.GetListedResults("Brands retrieved successfully");

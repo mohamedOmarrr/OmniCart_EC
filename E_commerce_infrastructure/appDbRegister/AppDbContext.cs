@@ -10,8 +10,8 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
     public DbSet<Category> Categories => Set<Category>();
     public DbSet<OrderShippingDetails> OrderShippingDetails => Set<OrderShippingDetails>();
     public DbSet<DeliveryMethod> DeliveryMethods => Set<DeliveryMethod>();
-    public DbSet<Cart> Carts => Set<Cart>();
-    public DbSet<CartItem> CartItems => Set<CartItem>();
+    public DbSet<Wishlist> Wishlists => Set<Wishlist>();
+    public DbSet<WishItem> WishItems => Set<WishItem>();
     
     public DbSet<Order> Orders => Set<Order>();
     public DbSet<OrderItem> OrderItems => Set<OrderItem>();

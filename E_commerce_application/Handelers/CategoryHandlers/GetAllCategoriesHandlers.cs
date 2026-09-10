@@ -8,10 +8,10 @@ using MediatR;
 namespace E_commerce_application.Handelers.CategoryHandlers;
 
 public class GetAllCategoriesHandlers( IRepository<Category> repository)
-    : IRequestHandler<EmptyCategoryQuery, Result<IReadOnlyList<CategoryDto>>>
+    : IRequestHandler<CategoryQuery, Result<IReadOnlyList<CategoryDto>>>
 {
     public async Task<Result<IReadOnlyList<CategoryDto>>> Handle(
-        EmptyCategoryQuery request,
+        CategoryQuery request,
         CancellationToken cancellationToken)
     {
 
