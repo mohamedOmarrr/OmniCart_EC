@@ -36,7 +36,7 @@ public static class CategoryEndpoints
         
         
         group.MapPost("/", async (
-                [AsParameters] NamedCategoryCommand command,
+                NamedCategoryCommand command,
                 ISender sender,
                 CancellationToken ct) =>
             {

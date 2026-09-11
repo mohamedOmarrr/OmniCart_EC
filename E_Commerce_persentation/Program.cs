@@ -34,6 +34,7 @@ app.MapAuthEndpoints(apiVersionSet);
 app.MapBrandEndpoints(apiVersionSet);
 app.MapCategoryEndpoints(apiVersionSet);
 app.MapWishlistEndpoints(apiVersionSet);
+app.MapCartEndpoints(apiVersionSet);
 
 using (var scope = app.Services.CreateAsyncScope())
 {

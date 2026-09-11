@@ -25,7 +25,7 @@ public static class ProductEndpoints
             .HasApiVersion(new ApiVersion(1, 0));
         
         group.MapGet("/paged", async (
-            [AsParameters] ProductPagedQuery query,
+            ProductPagedQuery query,
             ISender sender,
             CancellationToken ct) =>
         {
@@ -53,7 +53,7 @@ public static class ProductEndpoints
 
 
         group.MapPost("/", async (
-                [AsParameters] CreateProductRequest request,
+                CreateProductRequest request,
                 ISender sender,
                 CancellationToken ct) =>
             {
@@ -78,7 +78,7 @@ public static class ProductEndpoints
 
         
         group.MapPatch("/", async (
-                [AsParameters] UpdateProductRequest request,
+                UpdateProductRequest request,
                 ISender sender,
                 CancellationToken ct) =>
             {

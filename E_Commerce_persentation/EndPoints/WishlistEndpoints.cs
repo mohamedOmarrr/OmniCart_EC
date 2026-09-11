@@ -31,13 +31,13 @@ public static class WishlistEndpoints
                 return result.GetListedResults("Your Fav Products in Wishlist retrieved successfully");
             })
             .WithSummary("Gets all Products in Wishlist")
-            .WithDescription("Returns a list of Products that user Sored in Wishlist")
+            .WithDescription("Returns a list of Products that user Stored in Wishlist")
             .Produces<ApiResponse<IReadOnlyList<ProductDTO>>>(StatusCodes.Status200OK);
         
         
         
         group.MapPost("/", async (
-                [AsParameters] WishlistCommand command,
+                WishlistCommand command,
                 ISender sender,
                 CancellationToken ct) =>
             {

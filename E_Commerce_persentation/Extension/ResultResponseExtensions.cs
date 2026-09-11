@@ -21,6 +21,21 @@ public static class ResultResponseExtensions
                 message));
     }
     
+    public static IResult GetCartedResults<T>(
+        this Result<CartResult<T>> result,
+        string message)
+    {
+        if (result.IsFailure)
+            return result.Error.ToProblemDetails();
+
+        var value = result.Value;
+
+        return Results.Ok(
+            new ApiResponse<CartResult<T>>(
+                value,
+                message));
+    }
+    
     public static IResult GetListedResults<T>(
         this Result<IReadOnlyList<T>> result,
         string message)

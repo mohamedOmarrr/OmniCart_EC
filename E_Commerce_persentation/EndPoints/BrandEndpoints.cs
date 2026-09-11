@@ -37,7 +37,7 @@ public static class BrandEndpoints
         
         
         group.MapPost("/", async (
-                [AsParameters] NamedBrandCommand command,
+                NamedBrandCommand command,
                 ISender sender,
                 CancellationToken ct) =>
             {

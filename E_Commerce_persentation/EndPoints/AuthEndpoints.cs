@@ -21,7 +21,7 @@ public static class AuthEndpoints
             .HasApiVersion(new ApiVersion(1, 0));
         
         group.MapPost("/log", async (
-                [AsParameters] LogCommand command,
+                LogCommand command,
                 ISender sender,
                 CancellationToken ct) =>
             {
@@ -34,7 +34,7 @@ public static class AuthEndpoints
             .Produces<ApiResponse<RegisterDto>>(StatusCodes.Status200OK);
         
         group.MapPost("/refresh", async (
-                [AsParameters] RefreshCommand command,
+                RefreshCommand command,
                 ISender sender,
                 CancellationToken ct) =>
             {

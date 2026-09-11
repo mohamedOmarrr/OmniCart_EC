@@ -22,7 +22,7 @@ public static class UserEndpoints
             .HasApiVersion(new ApiVersion(1, 0));
      
         group.MapPost("/register", async (
-                [AsParameters] RegisterCommand command,
+                RegisterCommand command,
                 ISender sender,
                 CancellationToken ct) =>
             {
@@ -36,7 +36,7 @@ public static class UserEndpoints
         
         
         group.MapPost("/forget", async (
-                [AsParameters] ForgetCommand command,
+                ForgetCommand command,
                 ISender sender,
                 CancellationToken ct) =>
             {
@@ -50,7 +50,7 @@ public static class UserEndpoints
         
         
         group.MapPost("/verify", async (
-                [AsParameters] VerifyCommand command,
+                VerifyCommand command,
                 ISender sender,
                 CancellationToken ct) =>
             {
@@ -64,7 +64,7 @@ public static class UserEndpoints
         
         
         group.MapPost("/reset", async (
-                [AsParameters] ResetCommand command,
+                ResetCommand command,
                 ISender sender,
                 CancellationToken ct) =>
             {
