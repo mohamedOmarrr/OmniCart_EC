@@ -25,7 +25,7 @@ public static class ProductEndpoints
             .HasApiVersion(new ApiVersion(1, 0));
         
         group.MapGet("/paged", async (
-            ProductPagedQuery query,
+            [AsParameters] ProductPagedQuery query,
             ISender sender,
             CancellationToken ct) =>
         {

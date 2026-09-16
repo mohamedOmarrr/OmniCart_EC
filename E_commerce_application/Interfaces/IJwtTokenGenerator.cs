@@ -4,5 +4,5 @@ namespace E_commerce_application.Interfaces;
 
 public interface IJwtTokenGenerator
 {
-    AccessTokenResult GenerateToken(UserTokenData userToken);
+    Task<AccessTokenResult> GenerateToken(UserTokenData userToken);
 }

@@ -11,7 +11,7 @@ namespace E_commerce_application.Handelers.UserHandlers;
 
 public class ResetPasswordHandler(
     UserManager<ApplicationUser> userManager,
-    ITokenService tokenService,
+    IJwtTokenGenerator tokenService,
     IRefreshTokenService refreshTokenService)
     : IRequestHandler<ResetCommand, Result<RegisterDto>>
 {
@@ -58,12 +58,12 @@ public class ResetPasswordHandler(
             role.FirstOrDefault());
 
         var accessToken =
-            await tokenService.CreateTokenAsync(userTokenData);
+            await tokenService.GenerateToken(userTokenData);
 
         var refreshToken =
             await refreshTokenService.CreateRefreshTokenAsync(
-                user.Id.ToString());
+                user.Id);
 
-        return Result<RegisterDto>.Success(new RegisterDto (accessToken, refreshToken));
+        return Result<RegisterDto>.Success(new RegisterDto (accessToken.ToString(), refreshToken));
     }
 }

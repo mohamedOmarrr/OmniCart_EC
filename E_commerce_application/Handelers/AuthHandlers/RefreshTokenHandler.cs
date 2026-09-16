@@ -11,7 +11,7 @@ namespace E_commerce_application.Handelers.AuthHandlers;
 
 public class RefreshTokenHandler(
     IRefreshTokenService refreshTokenService,
-    ITokenService tokenService,
+    IJwtTokenGenerator tokenService,
     UserManager<ApplicationUser> userManager)
     : IRequestHandler<RefreshCommand, Result<RegisterDto>>
 {
@@ -47,15 +47,14 @@ public class RefreshTokenHandler(
             user.DisplayName!,
             Roles.Customer);
 
-        var accessToken =
-            await tokenService.CreateTokenAsync(userTokenData);
+        var accessToken = await tokenService.GenerateToken(userTokenData);
 
       
         var refreshToken = response.Value.RefreshToken;
 
         return Result<RegisterDto>.Success(
             new RegisterDto(
-                accessToken,
+                accessToken.ToString(),
                 refreshToken));
     }
 }

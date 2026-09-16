@@ -7,7 +7,7 @@ namespace E_commerce_infrastructure.Identities;
 public class RefreshTokenService(AppIdentityDbContext context) : IRefreshTokenService
 {
     
-    public async Task<string> CreateRefreshTokenAsync(string userId)
+    public async Task<string> CreateRefreshTokenAsync(Guid userId)
     {
         var token = GenerateRefreshToken();
 
@@ -67,7 +67,7 @@ public class RefreshTokenService(AppIdentityDbContext context) : IRefreshTokenSe
         
         await context.SaveChangesAsync();
 
-        return (newRefreshToken, userId);
+        return (newRefreshToken, userId.ToString());
     }
 
     private static string GenerateRefreshToken()

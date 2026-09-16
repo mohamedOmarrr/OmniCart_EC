@@ -24,7 +24,5 @@ public class RefreshTokenConfiguration : IEntityTypeConfiguration<RefreshToken>
             .HasForeignKey(x => x.UserId)
             .OnDelete(DeleteBehavior.Cascade);
 
-        builder.HasIndex(x => x.Token)
-            .IsUnique();
     }
 }

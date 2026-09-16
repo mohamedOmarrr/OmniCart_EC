@@ -2,7 +2,7 @@
 
 public interface IRefreshTokenService
 {
-    Task<string> CreateRefreshTokenAsync(string userId);
+    Task<string> CreateRefreshTokenAsync(Guid userId);
 
     Task<(string RefreshToken, string UserId)?>
         RefreshAsync(string refreshToken);

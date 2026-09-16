@@ -12,7 +12,7 @@ public class JwtTokenGenerator(IOptions<JwtSettings> settings) : IJwtTokenGenera
     
     private readonly JwtSettings _settings = settings.Value;
     
-    public AccessTokenResult GenerateToken(UserTokenData userToken)
+    public async Task<AccessTokenResult> GenerateToken(UserTokenData userToken)
     {
         var expiresAt = DateTimeOffset.UtcNow.AddMinutes(_settings.AccessTokenExpirationMinutes);
 

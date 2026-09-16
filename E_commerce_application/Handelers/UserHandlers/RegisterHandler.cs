@@ -9,9 +9,9 @@ using Microsoft.AspNetCore.Identity;
 
 namespace E_commerce_application.Handelers.UserHandlers;
 
-public class RegisterHsndler(
+public class RegisterHandler(
     UserManager<ApplicationUser> userManager,
-    ITokenService tokenService,
+    IJwtTokenGenerator tokenService,
     IRefreshTokenService refreshTokenService)
     : IRequestHandler<RegisterCommand, Result<RegisterDto>>
 {
@@ -56,16 +56,15 @@ public class RegisterHsndler(
             user.DisplayName!,
             Roles.Customer);
 
-        var accessToken =
-            await tokenService.CreateTokenAsync(userTokenData);
+        var accessToken = await tokenService.GenerateToken(userTokenData);
 
         var refreshToken =
             await refreshTokenService.CreateRefreshTokenAsync(
-                user.Id.ToString());
+                user.Id);
 
         return Result<RegisterDto>.Success(
             new RegisterDto(
-                accessToken,
+                accessToken.ToString(),
                 refreshToken));
     }
 }

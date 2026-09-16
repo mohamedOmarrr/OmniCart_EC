@@ -49,7 +49,8 @@ using (var scope = app.Services.CreateAsyncScope())
 
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 

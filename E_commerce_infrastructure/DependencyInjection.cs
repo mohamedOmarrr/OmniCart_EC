@@ -5,11 +5,14 @@ using E_commerce_infrastructure.Email;
 using E_commerce_infrastructure.Identities;
 using E_commerce_infrastructure.Payment;
 using E_commerce_infrastructure.Redis;
+using E_commerce_infrastructure.Repos;
 using E_commerce_infrastructure.Seeding;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
 using StackExchange.Redis;
 
 namespace E_commerce_infrastructure;
@@ -48,14 +51,50 @@ public static class DependencyInjection
             .AddRoles<ApplicationRole>()
             .AddEntityFrameworkStores<AppIdentityDbContext>();
         
+        
+        services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+        services.AddScoped<IProductRepository, ProductRepository>();
+        services.AddScoped<IWishlistRepository, WishlistRepository>();
+        services.AddScoped<IOrderRepository, OrderRepository>();
+        
 //JWT
-        services.Configure<JwtSettings>(config.GetSection(JwtSettings.SectionName));
+        services.Configure<JwtSettings>(
+            config.GetSection(JwtSettings.SectionName));
+
         var jwtSettings = config.GetSection(JwtSettings.SectionName).Get<JwtSettings>()
-                          ?? throw new InvalidOperationException($"Configuration section '{JwtSettings.SectionName}' is missing.");
+                          ?? throw new InvalidOperationException(
+                              $"Configuration section '{JwtSettings.SectionName}' is missing.");
 
         if (string.IsNullOrWhiteSpace(jwtSettings.SecretKey) || jwtSettings.SecretKey.Length < 32)
-            throw new InvalidOperationException("Jwt:Secret must be at least 32 characters.");
-    
+            throw new InvalidOperationException(
+                "Jwt:Secret must be at least 32 characters.");
+
+        services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(
+                        Encoding.UTF8.GetBytes(jwtSettings.SecretKey)),
+
+                    ValidateIssuer = true,
+                    ValidIssuer = jwtSettings.Issuer,
+
+                    ValidateAudience = true,
+                    ValidAudience = jwtSettings.Audience,
+
+                    ValidateLifetime = true,
+                    ClockSkew = TimeSpan.Zero
+                };
+            });
+
+        services.AddAuthorization();
+
         services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
         services.AddScoped<IRefreshTokenService, RefreshTokenService>();
     
@@ -65,8 +104,8 @@ public static class DependencyInjection
         services.Configure<CloudinarySettings>(
             config.GetSection(CloudinarySettings.SectionName)
         );
-        
-        
+
+        services.AddScoped<IPhotoService, CloudinaryService>();
         
 //Email register not finished      
 
@@ -86,12 +125,14 @@ public static class DependencyInjection
             IEmailVerificationCodeStore,
             EmailVerificationCodeStore>();
         
+        services.AddScoped<IEmailService, EmailService>();
+        
         
 //redis part not finished
         
         services.Configure<RedisSettings>(
             config.GetSection(RedisSettings.SectionName));
-        
+
         services.AddSingleton<IConnectionMultiplexer>(sp =>
         {
             var settings = sp
@@ -110,6 +151,8 @@ public static class DependencyInjection
 
             return ConnectionMultiplexer.Connect(configuration);
         });
+
+        services.AddScoped<IRedisService, RedisService>();
         
         
         
@@ -134,6 +177,7 @@ public static class DependencyInjection
                 client.BaseAddress = new Uri(settings.BaseUrl); 
             }
         );
+        
 
         return services;
     }

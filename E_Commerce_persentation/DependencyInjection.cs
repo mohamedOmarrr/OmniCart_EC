@@ -33,6 +33,11 @@ public static class DependencyInjection
 
         services.AddScoped<ICurrentUserService, CurrentUserService>();
         
+        
+        
+        services.AddEndpointsApiExplorer();
+        services.AddSwaggerGen();
+        
         return services;  
     }
 }
