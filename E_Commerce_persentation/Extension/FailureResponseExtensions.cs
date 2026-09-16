@@ -6,7 +6,7 @@ public static class FailureResponseExtensions
 {
     public static IResult ToProblemDetails(this Error error)
     {
-        return error.GetType switch
+        return error.Type switch
         {
             ErrorType.Validation => Results.BadRequest(error),
             ErrorType.NotFound => Results.NotFound(error),

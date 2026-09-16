@@ -2,6 +2,10 @@
 
 public sealed class Error(string code, string message, ErrorType errorType)
 {
+    public string Code { get; } = code;
+    public string Message { get; } = message;
+    public ErrorType Type { get; } = errorType;
+    
     public static readonly Error None =
         new(string.Empty, string.Empty, ErrorType.None);
 

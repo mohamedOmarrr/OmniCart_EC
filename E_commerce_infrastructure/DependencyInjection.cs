@@ -3,13 +3,13 @@ using E_commerce_application.Interfaces;
 using E_commerce_infrastructure.Cloudinary;
 using E_commerce_infrastructure.Email;
 using E_commerce_infrastructure.Identities;
+using E_commerce_infrastructure.Payment;
 using E_commerce_infrastructure.Redis;
 using E_commerce_infrastructure.Seeding;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
-using Microsoft.IdentityModel.Tokens;
 using StackExchange.Redis;
 
 namespace E_commerce_infrastructure;
@@ -47,12 +47,7 @@ public static class DependencyInjection
             })
             .AddRoles<ApplicationRole>()
             .AddEntityFrameworkStores<AppIdentityDbContext>();
-            // .AddDefaultTokenProviders();
-            
-            
-            //
-            // services.AddAuthorization();
-            // services.AddHttpContextAccessor();    
+        
 //JWT
         services.Configure<JwtSettings>(config.GetSection(JwtSettings.SectionName));
         var jwtSettings = config.GetSection(JwtSettings.SectionName).Get<JwtSettings>()
@@ -128,7 +123,17 @@ public static class DependencyInjection
         services.AddScoped<DatabaseSeeder>();
         
         
+//Payment
 
+        services.Configure<PaymobSettings>(
+            config.GetSection(PaymobSettings.SectionName));
+        
+        services.AddHttpClient<IPaymentService, PaymobService>((serviceProvider, client) =>
+            {
+                var settings = serviceProvider.GetRequiredService<IOptions<PaymobSettings>>().Value;
+                client.BaseAddress = new Uri(settings.BaseUrl); 
+            }
+        );
 
         return services;
     }

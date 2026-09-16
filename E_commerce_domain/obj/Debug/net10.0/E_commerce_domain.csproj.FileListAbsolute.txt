@@ -10,3 +10,4 @@ E:\E_commerce_api\omni_E_commerce\E_commerce_domain\obj\Debug\net10.0\E_commerce
 E:\E_commerce_api\omni_E_commerce\E_commerce_domain\obj\Debug\net10.0\refint\E_commerce_domain.dll
 E:\E_commerce_api\omni_E_commerce\E_commerce_domain\obj\Debug\net10.0\E_commerce_domain.pdb
 E:\E_commerce_api\omni_E_commerce\E_commerce_domain\obj\Debug\net10.0\ref\E_commerce_domain.dll
+E:\E_commerce_api\omni_E_commerce\E_commerce_domain\obj\Debug\net10.0\E_commerce_domain.csproj.AssemblyReference.cache

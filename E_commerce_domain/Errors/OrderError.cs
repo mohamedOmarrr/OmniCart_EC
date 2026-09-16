@@ -65,11 +65,11 @@ public static class OrderError
     public static readonly Error InvalidPaymentState =
         Error.Conflict("Order.InvalidPaymentState", "Order is not in a payable state.");
 
-    public static readonly Error PaymentIntentMismatch =
-        Error.Conflict("Order.PaymentIntentMismatch", "Payment intent does not match this order.");
+    public static readonly Error PaymentTransactionMismatch =
+        Error.Conflict("Order.PaymentTransactionMismatch", "Payment Transation does not match this order.");
 
-    public static readonly Error InvalidPaymentIntent =
-        Error.Validation("Order.InvalidPaymentIntent", "Payment intent id is required.");
+    public static readonly Error InvalidPaymentTransaction =
+        Error.Validation("Order.InvalidPaymentTransaction", "Payment Transaction is Invalid.");
 
     public static readonly Error PaymentFailed =
         Error.Failure("Order.PaymentFailed", "Payment could not be started.");

@@ -1,5 +1,6 @@
 ﻿using Asp.Versioning;
 using E_commerce_application.Interfaces;
+using E_Commerce_persentation.HttpRequests;
 
 namespace E_Commerce_persentation;
 
@@ -27,8 +28,10 @@ public static class DependencyInjection
             });
 
         services.AddHttpContextAccessor();
+        services.AddAuthorization();
+        
 
-        services.AddScoped<ICurrentUserService, ICurrentUserService>();
+        services.AddScoped<ICurrentUserService, CurrentUserService>();
         
         return services;  
     }

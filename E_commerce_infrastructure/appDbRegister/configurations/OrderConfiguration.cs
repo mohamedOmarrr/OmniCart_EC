@@ -49,10 +49,10 @@ public class OrderConfiguration : IEntityTypeConfiguration<Order>
         builder.Property(x => x.ShippingCost).HasPrecision(18, 2);
         builder.Property(x => x.Total).HasPrecision(18, 2);
 
-        builder.Property(x => x.PaymentIntentId)
+        builder.Property(x => x.PaymentTransactionId)
             .HasMaxLength(200);
 
-        builder.HasIndex(x => x.PaymentIntentId);
+        builder.HasIndex(x => x.PaymentTransactionId);
 
         builder.HasMany(x => x.Items)
             .WithOne()

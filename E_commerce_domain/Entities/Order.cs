@@ -22,6 +22,8 @@ public class Order : BaseEntity
 
     public Guid UserId { get; private set; }
     public OrderStatus Status { get; private set; }
+    
+    public PaymentMethod PaymentMethod { get; private set; }
 
     public Guid DeliveryMethodId { get; private set; }
     public string DeliveryMethodName { get; private set; } = null!;
@@ -37,7 +39,7 @@ public class Order : BaseEntity
     public decimal ShippingCost { get; private set; }
     public decimal Total { get; private set; }
 
-    public string? PaymentIntentId { get; private set; }
+    public string? PaymentTransactionId { get; private set; }
     public DateTimeOffset? PaidAtUtc { get; private set; }
 
     public IReadOnlyCollection<OrderItem> Items => _items;
@@ -45,6 +47,7 @@ public class Order : BaseEntity
     public static Result<Order> Create(
         Guid id,
         Guid userId,
+        PaymentMethod paymentMethod,
         DeliveryMethod? deliveryMethod,
         OrderShippingDetails? orderShippingDetails,
         IReadOnlyList<(Guid ProductId, string ProductName, string PictureUrl, decimal UnitPrice, int Quantity)>? cartItems)
@@ -73,6 +76,7 @@ public class Order : BaseEntity
             Id = id,
             UserId = userId,
             Status = OrderStatus.Pending,
+            PaymentMethod = paymentMethod,
             DeliveryMethodId = deliveryMethod.Id,
             DeliveryMethodName = deliveryMethod.Name,
             DeliveryMethodEstimatedTime = deliveryMethod.EstimatedDeliveryTime,
@@ -119,41 +123,69 @@ public class Order : BaseEntity
         return Result.Success();
     }
 
-    public Result AttachPaymentIntent(string paymentIntentId)
+    public Result AttachPayment(string paymentTransactionId)
     {
         if (Status != OrderStatus.Pending)
             return Result.Failure(OrderError.InvalidPaymentState);
 
-        if (string.IsNullOrWhiteSpace(paymentIntentId))
-            return Result.Failure(OrderError.InvalidPaymentIntent);
+        if (string.IsNullOrWhiteSpace(paymentTransactionId))
+            return Result.Failure(OrderError.InvalidPaymentTransaction);
 
-        PaymentIntentId = paymentIntentId.Trim();
+        PaymentTransactionId = paymentTransactionId.Trim();
         UpdatedAt = DateTimeOffset.UtcNow;
         return Result.Success();
     }
 
-    public Result MarkAsPaid(string paymentIntentId)
+    public Result MarkAsPaid(string paymentTransactionId)
     {
         if (Status == OrderStatus.Cancelled)
             return Result.Failure(OrderError.CannotPayCancelled);
 
         // Idempotent: already paid with same intent
         if (Status == OrderStatus.Processing
-            && PaymentIntentId == paymentIntentId
+            && PaymentTransactionId == paymentTransactionId
             && PaidAtUtc is not null)
             return Result.Success();
 
         if (Status != OrderStatus.Pending)
             return Result.Failure(OrderError.InvalidPaymentState);
 
-        if (!string.IsNullOrWhiteSpace(PaymentIntentId)
-            && PaymentIntentId != paymentIntentId)
-            return Result.Failure(OrderError.PaymentIntentMismatch);
+        if (!string.IsNullOrWhiteSpace(PaymentTransactionId)
+            && PaymentTransactionId != paymentTransactionId)
+            return Result.Failure(OrderError.PaymentTransactionMismatch);
 
-        PaymentIntentId = paymentIntentId;
+        PaymentTransactionId = paymentTransactionId;
         PaidAtUtc = DateTimeOffset.UtcNow;
         Status = OrderStatus.Processing;
         UpdatedAt = DateTimeOffset.UtcNow;
+        return Result.Success();
+    }
+    
+    public Result MarkAsShipped()
+    {
+        if (Status == OrderStatus.Cancelled)
+            return Result.Failure(OrderError.PaymentFailed);
+
+        if (Status != OrderStatus.Processing)
+            return Result.Failure(OrderError.InvalidPaymentState);
+
+        Status = OrderStatus.Shipped;
+        UpdatedAt = DateTimeOffset.UtcNow;
+
+        return Result.Success();
+    }
+    
+    public Result MarkAsDelivered()
+    {
+        if (Status == OrderStatus.Cancelled)
+            return Result.Failure(OrderError.PaymentFailed);
+
+        if (Status != OrderStatus.Shipped)
+            return Result.Failure(OrderError.InvalidPaymentState);
+
+        Status = OrderStatus.Delivered;
+        UpdatedAt = DateTimeOffset.UtcNow;
+
         return Result.Success();
     }
 }

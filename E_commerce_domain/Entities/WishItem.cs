@@ -2,7 +2,6 @@
 
 public class WishItem : BaseEntity
 {
-    public Guid Id { get; set; }
     public Guid WishlistId { get; set; }
     public Wishlist Wishlist { get; set; } = null!;
     public Guid ProductId { get; set; }
