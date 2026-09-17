@@ -18,7 +18,7 @@ public static class CartEndpoints
     {
         var group = endpoints
             .MapGroup("/api/v{version:apiVersion}/cart")
-            .WithTags("Products")
+            .WithTags("Cart")
             .WithApiVersionSet(apiVersionSet)
             .HasApiVersion(new ApiVersion(1, 0));
 

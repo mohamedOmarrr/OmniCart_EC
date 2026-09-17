@@ -20,7 +20,7 @@ public static class OrderEndpoints
     {
         var group = endpoints
             .MapGroup("/api/v{version:apiVersion}/order")
-            .WithTags("Products")
+            .WithTags("Orders")
             .WithApiVersionSet(apiVersionSet)
             .HasApiVersion(new ApiVersion(1, 0));
 

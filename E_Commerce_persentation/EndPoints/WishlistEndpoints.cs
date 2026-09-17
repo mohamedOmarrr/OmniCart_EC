@@ -17,7 +17,7 @@ public static class WishlistEndpoints
     {
         var group = endpoints
             .MapGroup("/api/v{version:apiVersion}/wish")
-            .WithTags("Products")
+            .WithTags("Wishlist")
             .WithApiVersionSet(apiVersionSet)
             .HasApiVersion(new ApiVersion(1, 0));
 

@@ -17,7 +17,7 @@ public static class CategoryEndpoints
     {
         var group = endpoints
             .MapGroup("/api/v{version:apiVersion}/category")
-            .WithTags("Products")
+            .WithTags("Categories")
             .WithApiVersionSet(apiVersionSet)
             .HasApiVersion(new ApiVersion(1, 0));
 

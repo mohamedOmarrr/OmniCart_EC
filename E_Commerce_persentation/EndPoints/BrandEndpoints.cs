@@ -18,7 +18,7 @@ public static class BrandEndpoints
     {
         var group = endpoints
             .MapGroup("/api/v{version:apiVersion}/brands")
-            .WithTags("Products")
+            .WithTags("Brands")
             .WithApiVersionSet(apiVersionSet)
             .HasApiVersion(new ApiVersion(1, 0));
         
