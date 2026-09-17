@@ -8,13 +8,34 @@ public static class FailureResponseExtensions
     {
         return error.Type switch
         {
-            ErrorType.Validation => Results.BadRequest(error),
-            ErrorType.NotFound => Results.NotFound(error),
-            ErrorType.Conflict => Results.Conflict(error),
-            ErrorType.Unauthorized => Results.Unauthorized(),
-            ErrorType.Forbidden => Results.Forbid(),
-            ErrorType.Failure => Results.StatusCode(500),
-            _ => Results.StatusCode(500)
+            ErrorType.Validation =>
+                Results.BadRequest(error),
+
+            ErrorType.NotFound =>
+                Results.NotFound(error),
+
+            ErrorType.Conflict =>
+                Results.Conflict(error),
+
+            ErrorType.Unauthorized =>
+                Results.Json(
+                    error,
+                    statusCode: StatusCodes.Status401Unauthorized),
+
+            ErrorType.Forbidden =>
+                Results.Json(
+                    error,
+                    statusCode: StatusCodes.Status403Forbidden),
+
+            ErrorType.Failure =>
+                Results.Json(
+                    error,
+                    statusCode: StatusCodes.Status500InternalServerError),
+
+            _ =>
+                Results.Json(
+                    error,
+                    statusCode: StatusCodes.Status500InternalServerError)
         };
     }
 }
