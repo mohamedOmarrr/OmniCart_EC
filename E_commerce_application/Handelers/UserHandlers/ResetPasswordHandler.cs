@@ -25,7 +25,7 @@ public class ResetPasswordHandler(
         if (user is null)
         {
                 return Result<RegisterDto>.Failure(
-                    Error.Failure(
+                    Error.NotFound(
                         "User.NotFound",
                         "Failed to find the user"));
         }
@@ -40,13 +40,19 @@ public class ResetPasswordHandler(
                     user,
                     request.Password);
 
-            if (!addResult.Succeeded)
-            {
+           
+                if (!addResult.Succeeded)
+                {
+                    var errors = addResult.Errors
+                        .Select(e => e.Description)
+                        .ToList();
+
                     return Result<RegisterDto>.Failure(
-                        Error.Failure(
-                            "Password.NotAdded",
-                            "Cannot add password to the user"));
-            }
+                        Error.Validation(
+                            "Password.ResetFailed",
+                            string.Join(", ", errors)));
+                }
+           
         }
         
         var role = await userManager.GetRolesAsync(user);

@@ -25,7 +25,7 @@ public class LoginHandler(
         if (user is null)
         {
             return Result<RegisterDto>.Failure(
-                Error.Failure(
+                Error.Unauthorized(
                     "User.NotFound",
                     "Failed to Find This User"));
         }
@@ -38,7 +38,7 @@ public class LoginHandler(
         if (!passwordValid)
         {
             return Result<RegisterDto>.Failure(
-                Error.Failure(
+                Error.Unauthorized(
                     "Password.Validation",
                     "the password is Wrong"));
         }

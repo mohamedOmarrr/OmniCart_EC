@@ -26,7 +26,7 @@ public class RefreshTokenHandler(
         if (response is null)
         {
             return Result<RegisterDto>.Failure(
-                Error.Failure(
+                Error.Unauthorized(
                     "RefreshToken.NotValid",
                     "Failed to Create Tokens"));
         }
@@ -36,7 +36,7 @@ public class RefreshTokenHandler(
         if (user is null)
         {
             return Result<RegisterDto>.Failure(
-                Error.Failure(
+                Error.Unauthorized(
                     "User.NotFound",
                     "Failed to Find This User"));
         }

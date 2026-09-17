@@ -34,20 +34,34 @@ public class RegisterHandler(
         
         if (!result.Succeeded)
         {
-            return Result<RegisterDto>.Failure(
-                Error.Failure(
-                    "User.CreateFailed",
-                    "Failed to Create User"));
+            if (!result.Succeeded)
+            {
+                var errors = result.Errors
+                    .Select(e => e.Description)
+                    .ToList();
+
+                return Result<RegisterDto>.Failure(
+                    Error.Validation(
+                        "User.CreateFailed",
+                        string.Join(", ", errors)));
+            }
         }
 
         var role = await userManager.AddToRoleAsync(user, Roles.Customer);
         
         if (!role.Succeeded)
         {
-            return Result<RegisterDto>.Failure(
-                Error.Failure(
-                    "User.AddRoleFailed",
-                    "Failed to assign Customer Role"));
+            if (!result.Succeeded)
+            {
+                var errors = result.Errors
+                    .Select(e => e.Description)
+                    .ToList();
+
+                return Result<RegisterDto>.Failure(
+                    Error.Validation(
+                        "User.RoleAssignmentFailed",
+                        string.Join(", ", errors)));
+            }
         }
         
         var userTokenData = new UserTokenData(

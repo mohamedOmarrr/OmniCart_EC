@@ -21,7 +21,9 @@ public class VerifyCodeHandler(
 
         if (!isValid)
         {
-            return Result<ResponseUserDto>.Failure(Error.NotFound("Code.NotFound",  "Unveiled code"));
+            return Result<ResponseUserDto>.Failure(
+                Error.Validation("verificationCode.Invaild",  "The verificationCode is invalid or expired")
+                );
         }
 
         await verificationCodeStore.RemoveAsync(
