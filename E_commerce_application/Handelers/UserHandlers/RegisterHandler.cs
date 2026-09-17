@@ -34,8 +34,7 @@ public class RegisterHandler(
         
         if (!result.Succeeded)
         {
-            if (!result.Succeeded)
-            {
+      
                 var errors = result.Errors
                     .Select(e => e.Description)
                     .ToList();
@@ -44,15 +43,14 @@ public class RegisterHandler(
                     Error.Validation(
                         "User.CreateFailed",
                         string.Join(", ", errors)));
-            }
+        
         }
 
         var role = await userManager.AddToRoleAsync(user, Roles.Customer);
         
         if (!role.Succeeded)
         {
-            if (!result.Succeeded)
-            {
+         
                 var errors = result.Errors
                     .Select(e => e.Description)
                     .ToList();
@@ -61,7 +59,7 @@ public class RegisterHandler(
                     Error.Validation(
                         "User.RoleAssignmentFailed",
                         string.Join(", ", errors)));
-            }
+          
         }
         
         var userTokenData = new UserTokenData(
