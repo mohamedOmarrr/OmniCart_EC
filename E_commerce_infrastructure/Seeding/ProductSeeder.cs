@@ -9,8 +9,19 @@ public class ProductSeeder(AppDbContext dbContext) : IDataSeeder
 
     public async Task SeedAsync(CancellationToken ct = default)
     {
-        await JsonSeeder.SeedIfEmpty<Product, ProductSeedModel>
-            (dbContext.Products, "brands.json", b => Product.Create(b.Id, b.Name, b.Description, b.PictureUrl, b.Price, b.ProductBrandId, b.ProductCategoryId).Value, ct);
+        await JsonSeeder.SeedIfEmpty<Product, ProductSeedModel>(
+            dbContext.Products,
+            "Product.json",
+            p => Product.Create(
+                p.Id,
+                p.Name,
+                p.Description,
+                p.PictureUrl,
+                p.Price,
+                p.ProductBrandId,
+                p.ProductCategoryId).Value,
+            ct);
+
         await dbContext.SaveChangesAsync(ct);
     }
 }

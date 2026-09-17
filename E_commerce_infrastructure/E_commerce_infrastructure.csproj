@@ -31,4 +31,16 @@
       <PackageReference Include="Stripe.net" Version="52.4.2" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="Seeding\Data\Category.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="Seeding\Data\Product.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="Seeding\Data\Brand.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>

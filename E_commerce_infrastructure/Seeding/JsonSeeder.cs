@@ -28,9 +28,13 @@ public static class JsonSeeder
         await using var stream = File.OpenRead(filePath);
 
         
-        var models = await JsonSerializer.DeserializeAsync<List<TModel>>(stream, options, ct);
+        var models = await JsonSerializer.DeserializeAsync<List<TModel>>(
+            stream, options, ct);
 
-        if (models is null || models.Count == 0) return;
+        Console.WriteLine($">>> JSON models count: {models?.Count}");
+
+        if (models is null || models.Count == 0)
+            return;
 
 
         await dbSet.AddRangeAsync(models.Select(map), ct);

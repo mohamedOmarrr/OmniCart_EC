@@ -1,0 +1,34 @@
+﻿[
+  {
+    "Id": "e575a443-42bc-5447-92f0-5e84b36803a9",
+    "Name": "Accessories"
+  },
+  {
+    "Id": "a259dbc9-67d1-5f56-b621-436a67cd3318",
+    "Name": "Shoes"
+  },
+  {
+    "Id": "fbe3c0f7-0771-5bf7-8f39-0233bfbc61fc",
+    "Name": "Electronics"
+  },
+  {
+    "Id": "415ca2b9-7e91-5aaf-b476-22080257ef11",
+    "Name": "Sports"
+  },
+  {
+    "Id": "aa02cf46-cd11-57dd-96d9-2b33740b6d26",
+    "Name": "Mobiles"
+  },
+  {
+    "Id": "eb60b919-db6c-5fa9-9c11-5d9d760a3cf9",
+    "Name": "Women Clothes"
+  },
+  {
+    "Id": "65150cad-2d60-52d4-a5a9-bd43ff630795",
+    "Name": "Men Clothes"
+  },
+  {
+    "Id": "5f7fb357-5127-5d29-8aed-62f9e703b054",
+    "Name": "Bags"
+  }
+]

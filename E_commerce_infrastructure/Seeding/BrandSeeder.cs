@@ -7,9 +7,14 @@ public class BrandSeeder(AppDbContext dbContext) : IDataSeeder
 {
     public int Order => 4;
 
-    public async Task SeedAsync(CancellationToken ct = default){
-        await JsonSeeder.SeedIfEmpty<Brand, BrandSeedModel>
-            (dbContext.Brands, "brands.json", b => Brand.Create(b.Id, b.Name).Value, ct);
+    public async Task SeedAsync(CancellationToken ct = default)
+    {
+        await JsonSeeder.SeedIfEmpty<Brand, BrandSeedModel>(
+            dbContext.Brands,
+            "Brand.json",
+            b => Brand.Create(b.Id, b.Name).Value,
+            ct);
+
         await dbContext.SaveChangesAsync(ct);
     }
 }
