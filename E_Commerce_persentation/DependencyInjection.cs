@@ -1,6 +1,7 @@
 ﻿using Asp.Versioning;
 using E_commerce_application.Interfaces;
 using E_Commerce_persentation.HttpRequests;
+using Microsoft.OpenApi;
 
 namespace E_Commerce_persentation;
 
@@ -36,7 +37,27 @@ public static class DependencyInjection
         
         
         services.AddEndpointsApiExplorer();
-        services.AddSwaggerGen();
+        services.AddSwaggerGen(options =>
+        {
+            options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+            {
+                Name = "Authorization",
+                Type = SecuritySchemeType.Http,
+                Scheme = "bearer",
+                BearerFormat = "JWT",
+                In = ParameterLocation.Header,
+                Description = "Enter your JWT token."
+            });
+
+            options.AddSecurityRequirement(document =>
+                new OpenApiSecurityRequirement
+                {
+                    {
+                        new OpenApiSecuritySchemeReference("Bearer", document),
+                        new List<string>()
+                    }
+                });
+        });
         
         return services;  
     }

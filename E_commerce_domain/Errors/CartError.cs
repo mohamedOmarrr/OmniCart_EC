@@ -13,6 +13,11 @@ public static class CartError
         Error.Validation(
             "Basket.AuthenticatedBuyerIdMissing",
             "The user id claim is missing or invalid in the authentication token.");
+    
+    public static readonly Error ConflictInCart =
+        Error.Validation(
+            "Product.IsConflict",
+            "This product is already in a cart.");
 
     public static readonly Error InvalidBuyerId =
         Error.Validation(

@@ -19,6 +19,7 @@ public class RedisService : IRedisService
         TimeSpan? expiration = null)
     {
         var json = JsonSerializer.Serialize(value);
+        
 
         if (expiration.HasValue)
         {

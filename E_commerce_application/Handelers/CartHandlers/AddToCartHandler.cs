@@ -20,6 +20,7 @@ public class AddToCartHandler(
     {
         var buyerId = currentUserService.UserId;
 
+
         if (buyerId is null)
         {
             return Result<CartItemDto>.Failure(CartError.InvalidBuyerId);
@@ -28,7 +29,7 @@ public class AddToCartHandler(
         var product = await productRepository.GetByIdAsync(
             request.ProductId,
             cancellationToken);
-
+       
         if (product is null)
             return Result<CartItemDto>.Failure(
                 ProductError.NotFound);
@@ -42,6 +43,15 @@ public class AddToCartHandler(
             var emptyCart = Cart.CreateEmpty(buyerId.Value);
             
             cart = emptyCart.Value;
+        }
+        
+        var existingItem = cart.Items
+            .FirstOrDefault(x => x.ProductId == request.ProductId);
+
+        if (existingItem is not null)
+        {
+            return Result<CartItemDto>.Failure(
+                CartError.ConflictInCart);
         }
 
         var addCartItem = cart.AddItem(

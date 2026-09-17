@@ -26,7 +26,7 @@ public class EmailVerificationCodeStore : IEmailVerificationCodeStore
         TimeSpan expiration)
     {
         var key =
-            $"email-verification-code:{userId}";
+            $"email-verification-code:{userId.ToLowerInvariant()}";
 
         await _redis.SetAsync(
             key,
@@ -39,18 +39,18 @@ public class EmailVerificationCodeStore : IEmailVerificationCodeStore
         string code)
     {
         var key =
-            $"email-verification-code:{userId}";
+            $"email-verification-code:{userId.ToLowerInvariant()}";
 
         var storedCode =
             await _redis.GetAsync<string>(key);
-
-        return storedCode == code;
+        
+        return string.Equals(storedCode, code, StringComparison.Ordinal);
     }
 
     public async Task RemoveAsync(string userId)
     {
         var key =
-            $"email-verification-code:{userId}";
+            $"email-verification-code:{userId.ToLowerInvariant()}";
 
         await _redis.DeleteAsync(key);
     }

@@ -9,7 +9,7 @@ using MediatR;
 namespace E_commerce_application.Handelers.WishHandlers;
 
 public class GetWishlistHandler(
-    IRepository<Wishlist> wishlistRepository,
+    IWishlistRepository wishlistRepository,
     ICurrentUserService currentUserService)
     : IRequestHandler<WishlistQuery, Result<IReadOnlyList<ProductDTO>>>
 {
@@ -27,8 +27,8 @@ public class GetWishlistHandler(
                     ErrorType.Unauthorized
                 ));
 
-        var wishlist = await wishlistRepository.FirstOrDefaultAsync(
-            x => x.UserId == userId.Value);
+        var wishlist = await wishlistRepository.GetByUserIdWithItemsAsync(userId.Value, cancellationToken);
+            
 
         if (wishlist is null)
         {

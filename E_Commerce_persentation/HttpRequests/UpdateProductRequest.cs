@@ -1,9 +1,14 @@
 ﻿namespace E_Commerce_persentation.HttpRequests;
 
-public record UpdateProductRequest(
-    Guid Id,
-    string? Name,
-    string? Description,
-    decimal? Price,
-    IFormFile? Image
-    );
+public class UpdateProductRequest
+{
+    public Guid Id { get; set; }
+
+    public string? Name { get; set; }
+
+    public string? Description { get; set; }
+
+    public decimal? Price { get; set; }
+
+    public IFormFile? Image { get; set; }
+}

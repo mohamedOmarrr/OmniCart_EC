@@ -53,4 +53,18 @@ public class ProductRepository(AppDbContext context) : Repository<Product>(conte
             totalPages);
 
     }
+    
+    
+    public async Task<Product?> GetByIdWithDetailsAsync(
+        Guid id,
+        CancellationToken cancellationToken = default)
+    {
+        return await _dbSet
+            .AsNoTracking()
+            .Include(p => p.ProductBrand)
+            .Include(p => p.ProductCategory)
+            .FirstOrDefaultAsync(
+                p => p.Id == id,
+                cancellationToken);
+    }
 }

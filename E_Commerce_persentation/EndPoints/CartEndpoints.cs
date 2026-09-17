@@ -22,7 +22,7 @@ public static class CartEndpoints
             .WithApiVersionSet(apiVersionSet)
             .HasApiVersion(new ApiVersion(1, 0));
 
-        group.MapPost("/{id:guid}", async (
+        group.MapPost("/", async (
                 [AsParameters] AddToCartCommand command,
                 ISender sender,
                 CancellationToken ct) =>
@@ -51,7 +51,7 @@ public static class CartEndpoints
             .WithDescription("Returns List of CartItem DTOs that you Added to Cart")
             .Produces<ApiResponse<CartResult<CartItemDto>>>(StatusCodes.Status200OK);
         
-        group.MapDelete("/item/{productId:guid}", async (
+        group.MapDelete("/item", async (
                 [AsParameters] DeleteActionOnCartCommand command,
                 ISender sender,
                 CancellationToken ct) =>

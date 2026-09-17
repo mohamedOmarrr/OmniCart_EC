@@ -1,10 +1,15 @@
 ﻿namespace E_Commerce_persentation.HttpRequests;
 
-public record CreateProductRequest(
-        string Name,
-        string Description,
-        decimal Price,
-        IFormFile Image,
-        string CategoryName,
-        string BrandName
-    );
+public class CreateProductRequest
+{
+    public string Name { get; set; } = null!;
+
+    public string Description { get; set; } = null!;
+
+    public decimal Price { get; set; }
+
+    public IFormFile Image { get; set; }
+
+    public string CategoryName { get; set; } = null!;
+    public string BrandName { get; set; } = null!;
+}

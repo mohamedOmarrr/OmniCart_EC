@@ -22,6 +22,7 @@ public class UpdateProductCommandHandler(
         
         if (product is null)
             return Result<Guid>.Failure(ProductError.NotFound);
+        var oldImage = product.ImageUrl;
 
         if (request.ImageStream is not null)
         {
@@ -33,6 +34,8 @@ public class UpdateProductCommandHandler(
             var imageResult = product.ChangePictureUrl(imageUrl);
             if (imageResult.IsFailure)
                 return Result<Guid>.Failure(imageResult.Error);
+            
+            await _photoService.DeleteAsync(oldImage);
         }
 
 
@@ -66,8 +69,6 @@ public class UpdateProductCommandHandler(
         _productRepository.Update(product);
         
         await _productRepository.SaveChangesAsync(ct);
-        
-        await _photoService.DeleteAsync(product.ImageUrl);
         
         return Result<Guid>.Success(product.Id);   
     }

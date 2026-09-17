@@ -53,7 +53,7 @@ public static class ProductEndpoints
 
 
         group.MapPost("/", async (
-                CreateProductRequest request,
+                [FromForm] CreateProductRequest request,
                 ISender sender,
                 CancellationToken ct) =>
             {
@@ -74,23 +74,34 @@ public static class ProductEndpoints
             .WithSummary("Create product")
             .WithDescription("Returns product ID")
             .Accepts<CreateProductRequest>("multipart/form-data")
-            .Produces<ApiResponse<Guid>>(StatusCodes.Status201Created);
+            .Produces<ApiResponse<Guid>>(StatusCodes.Status201Created)
+            .DisableAntiforgery()
+            .RequireAuthorization("AdminOnly");
 
         
         group.MapPatch("/", async (
-                UpdateProductRequest request,
+                [FromForm] UpdateProductRequest request,
                 ISender sender,
                 CancellationToken ct) =>
             {
                 
+                Stream? imageStream = null;
+                string? fileName = null;
+
+                if (request.Image is not null)
+                {
+                    imageStream = request.Image.OpenReadStream();
+                    fileName = request.Image.FileName;
+                }
+
                 var command = new UpdateProductCommand(
                     request.Id,
                     request.Name,
                     request.Description,
                     request.Price,
-                    request.Image.OpenReadStream(),
-                    request.Image.FileName
-                );
+                    imageStream,
+                    fileName);
+                   
                 
                 var result = await sender.Send(command, ct);
 
@@ -100,10 +111,12 @@ public static class ProductEndpoints
             })
             .WithSummary("Update product")
             .WithDescription("Updates an existing product.")
-            .Accepts<UpdateProductCommand>("application/json")
+            .Accepts<UpdateProductRequest>("multipart/form-data")
             .Produces<ApiResponse<Guid>>(StatusCodes.Status200OK)
             .ProducesProblem(StatusCodes.Status400BadRequest)
-            .ProducesProblem(StatusCodes.Status404NotFound);
+            .ProducesProblem(StatusCodes.Status404NotFound)
+            .DisableAntiforgery()
+            .RequireAuthorization("AdminOnly");
         
 
         group.MapDelete("/{id:guid}", async (
@@ -120,7 +133,8 @@ public static class ProductEndpoints
             })
             .WithSummary("Delete product")
             .WithDescription("Deletes an existing product.")
-            .Produces(StatusCodes.Status204NoContent);
+            .Produces(StatusCodes.Status204NoContent)
+            .RequireAuthorization("AdminOnly");
 
         
         return endpoints;

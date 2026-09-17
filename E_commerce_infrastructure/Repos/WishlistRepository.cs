@@ -11,11 +11,14 @@ public class WishlistRepository(AppDbContext context)
         Guid userId,
         CancellationToken cancellationToken = default)
     {
-        return await _dbSet
-            .AsNoTracking()
-            .Include(x => x.WishItems)
-            .FirstOrDefaultAsync(
-                x => x.UserId == userId,
-                cancellationToken);
+        {
+            return await _dbSet
+                .AsNoTracking()
+                .Include(x => x.WishItems)
+                .ThenInclude(x => x.Product)
+                .FirstOrDefaultAsync(
+                    x => x.UserId == userId,
+                    cancellationToken);
+        }
     }
 }

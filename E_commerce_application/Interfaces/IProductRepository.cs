@@ -11,4 +11,8 @@ public interface IProductRepository : IRepository<Product>
         string? search,
         string? searchType,
         CancellationToken cancellationToken = default);
+    
+    Task<Product?> GetByIdWithDetailsAsync(
+        Guid id,
+        CancellationToken cancellationToken = default);
 }
